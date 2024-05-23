@@ -1,0 +1,76 @@
+.tomasz-section {
+    background: rgba(12, 12, 12, 0.8);
+    padding: 5rem 1rem;
+    color: #d0b546;
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+.tomasz-image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tomasz-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tomasz-name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'VerlagBoldItalic', sans-serif;
+}
+
+.tomasz-biography p {
+    margin-bottom: 1rem;
+    font-size: 19px;
+    color: white;
+    opacity: 70%;
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .tomasz-image-container {
+        margin-bottom: 1rem;
+    }
+
+    .tomasz-biography p {
+        font-size: 16px;
+    }
+}
+
+.tomasz-biography {
+    position: relative;
+}
+
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.more-text.show {
+    max-height: 1000px;
+}
+
+.read-more-btn {
+    background-color: whitesmoke;
+    color: #0c0b0b;
+    border: none;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #b3953d;
+    color: #fff;
+}

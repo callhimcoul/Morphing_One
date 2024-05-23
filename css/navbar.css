@@ -1,0 +1,94 @@
+.navbar {
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+.bg-transparent {
+    background: linear-gradient(to bottom, black, transparent);
+    border-bottom: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ddd;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+    color: #ddd;
+}
+
+.navbar-logo {
+    max-width: 350px;
+    height: auto;
+}
+
+.navbar-logo-small { /* Main logo */
+    max-width: 300px;
+    height: auto;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-logo {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo-small {
+        max-width: 80px;
+    }
+    .navbar-logo-small-mobile {
+        display: block;
+    }
+    .navbar-brand .d-sm-none {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 576px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-brand {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-logo-small-mobile,
+    .navbar-logo-small {
+        display: none;
+    }
+    .navbar-logo {
+        display: block;
+        max-width: 120px;
+        height: auto;
+    }
+}

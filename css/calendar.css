@@ -1,0 +1,174 @@
+/* Ensure enough spacing between sections */
+section {
+    padding: 60px 0;
+}
+
+.calendar {
+    text-align: center;
+    color: #d4af37; /* Adjust this color to fit your theme */
+}
+
+.calendar h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-box {
+    background-color: rgba(0, 0, 0, 0.8); /* 90% opacity black */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space between calendar and concert list */
+}
+
+.month {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.month-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.prev-month,
+.next-month {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin: 0 10px;
+}
+
+.month-name {
+    font-size: 1.2rem; /* Smaller month text */
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 60px); /* Increase width of day */
+    gap: 10px;
+}
+
+.day {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.current-day {
+    background-color: #d4af37;
+    color: #fff;
+}
+
+.concert-day {
+    background-image: url("https://i.imgur.com/0He3WGF.png");
+    background-size: cover; /* This will cover the entire area of the day */
+    background-repeat: no-repeat;
+    color: #fff; /* Make the text visible, choose a color that contrasts with your image */
+    font-weight: bold;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow to the text for better readability */
+}
+
+.concert-day:hover {
+    background-color: rgba(
+            255,
+            215,
+            0,
+            0.5
+    ); /* Lighter background on hover with some transparency */
+}
+
+.concert-list {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.concert-list h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.concert-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.concert-list li {
+    margin-bottom: 10px;
+}
+
+.concert-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.concert-list li a:hover {
+    color: #d4af37;
+}
+
+.concert-day {
+    background-image: url("https://i.imgur.com/0He3WGF.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: pulse 1s infinite;
+}
+
+/* Hover-Effekt für Konzerttage */
+.concert-day:hover {
+    background-color: rgba(255, 215, 0, 0.7); /* Lighter background on hover with some transparency */
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Pulse-Animation für Konzerttage */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .days {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .concert-list {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+}

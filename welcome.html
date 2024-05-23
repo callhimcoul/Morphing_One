@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Morphing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+
+<body>
+<style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+    @font-face {
+        font-family: "Verlag-Book";
+        src: local("Verlag-Book"),
+        url("fonts/Verlag-Book.otf") format("opentype");
+    }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .welcome-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-text {
+        font-family: "Verlag-Book", sans-serif;
+        color: white;
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 1em;
+        text-align: center;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+
+    .social-icons i {
+        color: gold;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all 265ms ease-out;
+    }
+
+    .social-icons a {
+        display: inline-block;
+    }
+
+    .social-icons a:before {
+        transform: scale(1);
+        content: " ";
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: block;
+        background: black;
+        transition: all 265ms ease-out;
+    }
+
+    .social-icons a:hover:before {
+        transform: scale(0);
+        transition: all 265ms ease-in;
+    }
+
+    .social-icons a:hover i {
+        transform: scale(2.2);
+        color: black;
+        background: gold;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 265ms ease-in;
+    }
+
+    @keyframes pulsate {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.15);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .logo {
+        animation: pulsate 2s infinite ease-in-out;
+        cursor: pointer;
+        width: 100px;
+        height: 96px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo:hover {
+        border-color: #fff; /* Existing border-color change */
+        box-shadow: 0 0 10px #fff;  /* Add a white box-shadow */
+        border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 5px white;
+            }
+            50% {
+                transform: scale(1.25);
+                opacity: 0.7;
+                box-shadow: 0 0 15px white;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 5px white;
+            }
+        }
+
+        .logo {
+            animation: pulsate 2s infinite ease-in-out;
+            cursor: pointer;
+            width: 100px;
+            height: 96px;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .welcome-text {
+            font-size: 18px;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 940px) and (min-width: 768px) {
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 5px white;
+            }
+            50% {
+                transform: scale(1.25);
+                opacity: 0.7;
+                box-shadow: 0 0 15px white;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 5px white;
+            }
+        }
+
+        .logo {
+            animation: pulsate 2s infinite ease-in-out;
+            cursor: pointer;
+            width: 100px;
+            height: 96px;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .welcome-text {
+            font-size: 18px;
+        }
+    }
+</style>
+
+<div class="welcome-screen">
+    <img src="Images/gold_logo_notext.png" class="logo" alt="Logo" id="welcomeImage"/>
+    <div class="welcome-text customreg-text">Welcome to the World of Morphing
+    </div>
+    <ul class="social-icons">
+        <li>
+            <a href="https://www.instagram.com/morphingmusic" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/morphingmusic/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@morphingchamberorchestra" target="_blank"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li>
+            <a href="https://open.spotify.com/intl-de/artist/3NJaau60IyYeDGWI0cxI0W?si=OZs-N19pSiysS4uY6BDriA" target="_blank"><i class="fa fa-spotify"></i></a>
+        </li>
+        <li>
+            <a href="https://music.apple.com/us/artist/morphing-chamber-orchestra/434036476" target="_blank"><i class="fa fa-apple"></i></a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document
+        .getElementById("welcomeImage")
+        .addEventListener("click", function () {
+            sessionStorage.setItem("welcomeShown", "true");
+            window.location.href = "index.html";
+        });
+</script>
+</body>
+</html>

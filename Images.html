@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Morphing Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/ImagesIntern.css">
+</head>
+<body>
+
+<div class="return-btn-container">
+    <a href="index.html" class="return-btn">&#x2190;</a>
+</div>
+
+<div style="text-align:center; margin-top: 50px;">
+    <h2 class="custombold-text">Morphing Image Gallery</h2>
+</div>
+
+<div class="dropdown-container">
+    <div class="dropdown">
+        <button class="dropbtn">Sections</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="showAll()">Show All</a>
+            <a href="#section1">Covers & Labels</a>
+            <a href="#section2">Performance</a>
+            <a href="#section3">Archive</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="section1" class="section1 column">
+        <img src="https://i.imgur.com/cQAL9XP.png" alt="Covers & Labels 1" onclick="myFunction(this);">
+    </div>
+    <div class="section1 column">
+        <img src="https://i.imgur.com/zIlBs9v.png" alt="Covers & Labels 2" onclick="myFunction(this);">
+    </div>
+    <div class="section1 column">
+        <img src="https://i.imgur.com/FjFQKlO.jpg" alt="Covers & Labels 3" onclick="myFunction(this);">
+    </div>
+    <div class="section1 column">
+        <img src="https://i.imgur.com/A4hEf7U.gif" alt="Covers & Labels 4" onclick="myFunction(this);">
+    </div>
+    <div class="section1 column">
+        <img src="https://i.imgur.com/Ao4053n.png" alt="Covers & Labels 5" onclick="myFunction(this);">
+    </div>
+    <div id="section2" class="section2 column">
+        <img src="https://i.imgur.com/JS4LlTq.jpg" alt="Performance 1" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/xb2wllP.jpg" alt="Performance 2" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/cCywbJx.jpg" alt="Morphing Night Life" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/54FBlav.jpg" alt="Performance 3" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/OYlQhpT.jpg" alt="Performance 4" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/jf5Xzv6.jpg" alt="Performance 5" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/VzxHfxr.png" alt="Performance 6" onclick="myFunction(this);">
+    </div>
+    <div class="section2 column">
+        <img src="https://i.imgur.com/fesIQhk.jpg" alt="Performance 7" onclick="myFunction(this);">
+    </div>
+    <div id="section3" class="section3 column">
+        <img src="https://i.imgur.com/afkdbvb.jpg" alt="New Year" onclick="myFunction(this);">
+    </div>
+    <div class="section3 column">
+        <img src="https://i.imgur.com/1Cbu4Ry.jpg" alt="Archive 1" onclick="myFunction(this);">
+    </div>
+    <div class="section3 column">
+        <img src="https://i.imgur.com/AtT9WIo.png" alt="Orchestra in Japan" onclick="myFunction(this);">
+    </div>
+    <div class="section3 column">
+        <img src="https://i.imgur.com/r54IApo.jpg" alt="Archive 2" onclick="myFunction(this);">
+    </div>
+    <div class="section3 column">
+        <img src="https://i.imgur.com/HI1XEyR.jpg" alt="Archive 3" onclick="myFunction(this);">
+    </div>
+    <div class="section3 column">
+        <img src="https://i.imgur.com/qWU5Nl5.jpg" alt="Archive 4" onclick="myFunction(this);">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" src="" alt="">
+    <div id="imgtext"></div>
+</div>
+
+<script src="js/Images.js"></script>
+</body>
+</html>

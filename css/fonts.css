@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'VerlagBold';
+    src: url('../fonts/Verlag-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VerlagBook';
+    src: url('../fonts/Verlag-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VerlagBook';
+    src: url('../fonts/Verlag-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VerlagBook';
+    src: url('../fonts/Verlag-BookItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
