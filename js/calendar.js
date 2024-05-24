@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const concertsListElement = document.getElementById("concerts-list");
 
     const concerts = [
-        { date: 30, month: 4, year: 2024, url: "https://konzerthaus.at/konzert/eventid/61188", name: "Concert A" },
-        { date: 3, month: 5, year: 2024, url: "https://konzerthaus.at/konzert/eventid/61188", name: "Concert B" }
+        { date: 17, month: 5, year: 2024, url: "Sommerkonzert.html", name: "Sommerkonzert" },
+        { date: 3, month: 6, year: 2024, url: "https://konzerthaus.at/konzert/eventid/61188", name: "Coming Soon :)" }
     ];
 
     const months = [

@@ -1,17 +1,19 @@
-/* Ensure enough spacing between sections */
 section {
     padding: 60px 0;
+    font-family: 'VerlagBookItalic', sans-serif;
 }
 
 .calendar {
     text-align: center;
     color: #d4af37; /* Adjust this color to fit your theme */
+    font-family: 'VerlagBookItalic', sans-serif;
 }
 
 .calendar h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #d4af37;
+    font-family: 'VerlagBookItalic', sans-serif;
 }
 
 .calendar-wrapper {

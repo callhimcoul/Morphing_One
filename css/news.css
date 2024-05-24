@@ -59,6 +59,7 @@
     opacity: 70%;
     margin-bottom: 1rem;
     font-family: 'VerlagBookItalic', sans-serif;
+    font-size: 14px;
 }
 
 .news-item .news-date {
@@ -84,3 +85,42 @@
 .news-item .news-link:hover {
     background: linear-gradient(135deg, #1f6feb, #58a6ff);
 }
+
+.s_price {
+    color: #58a6ff;
+    font-size: 20px;
+}
+
+.news_mail {
+    color: #58a6ff;
+    font-size: 15px;
+}
+
+.news_number {
+    color: #58a6ff;
+    font-size: 15px;
+}
+
+.info-link {
+    color: #58a6ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.info-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.tickets-link {
+    color: white;
+    text-decoration: none;
+}
+
+.tickets-link:hover {
+    text-decoration: underline;
+}
+
+
+

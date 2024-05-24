@@ -1,0 +1,88 @@
+.footer {
+    background-color: #000;
+    color: #d4af37;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+.footer-logo-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .footer-logo-image {
+        max-width: 150px;
+    }
+
+    .footer-social-icon {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
+
+/* Audio Player Styles */
+.audio-player-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 5px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.audio-control {
+    background: none;
+    border: none;
+    color: #d4af37;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#audio-player {
+    width: 70%;
+    max-width: 600px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media (max-width: 576px) {
+    #audio-player {
+        width: 90%;
+    }
+}
