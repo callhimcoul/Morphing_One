@@ -1,0 +1,52 @@
+.about-section {
+    padding: 60px 0;
+    background-color: #000;
+    color: whitesmoke;
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #d0b546;
+    font-size: 2rem;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-item {
+    margin-bottom: 40px;
+}
+
+.about-subtitle {
+    font-size: 2em;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.2em;
+    color: #f0f0f0; /* Light color for better readability */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-quote {
+    font-size: 1.2em;
+    color: #d4af37; /* Golden color */
+    border-left: 4px solid #d4af37; /* Golden left border */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #f0f0f0; /* Light color for better readability */
+    text-align: right;
+}

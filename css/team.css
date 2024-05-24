@@ -1,0 +1,80 @@
+.team-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #000;
+}
+
+.team-title {
+    font-size: 1.8em;
+    color: #d4af37;
+    margin-bottom: 40px;
+    font-family: 'VerlagBookItalic', sans-serif;
+}
+
+.team-container {
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: 20px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.highlight .member-image img {
+    filter: brightness(1.2);
+}
+
+.member-image {
+    width: 100%;
+    height: 250px; /* Increase height */
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-name {
+    color: goldenrod;
+    margin-bottom: 5px;
+    font-family: "VerlagBookItalic", sans-serif;
+    font-size: 1.5em;
+}
+
+.member-title {
+    color: #f0f0f0;
+    font-size: 1em;
+}
+
+
