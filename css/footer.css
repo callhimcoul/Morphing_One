@@ -28,6 +28,32 @@
     color: #fff;
 }
 
+.footer-contact {
+    margin-bottom: 15px;
+}
+
+.footer-contact-title {
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin-bottom: 8px;
+    font-family: 'VerlagBoldItalic', sans-serif;
+}
+
+.footer-contact-info, .footer-contact-address {
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-contact-link {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact-link:hover {
+    color: #fff;
+}
+
 .footer-bottom {
     margin-top: 15px;
 }
@@ -44,47 +70,15 @@
         width: 250px;
     }
 
-    .footer-social-icon {
-        font-size: 20px;
-        margin: 0 5px;
-    }
-
     .footer-text {
         font-size: 12px;
     }
-}
 
-.audio-player-wrapper {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    padding: 5px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-}
+    .footer-contact-title {
+        font-size: 1rem;
+    }
 
-.audio-control {
-    background: none;
-    border: none;
-    color: #d4af37;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#audio-player {
-    width: 70%;
-    max-width: 600px;
-    color: #ffffff;
-    background-color: #000000;
-}
-
-@media (max-width: 576px) {
-    #audio-player {
-        width: 90%;
+    .footer-contact-info, .footer-contact-address {
+        font-size: 0.9rem;
     }
 }
