@@ -4,9 +4,9 @@
     padding-bottom: 50px;
 }
 
-.section-title {
+.section-title-videos {
     font-family: 'VerlagBookItalic', sans-serif;
-    color: #ffcc00;
+    color: #d0b546;
 }
 
 .video-thumbnail {
@@ -57,9 +57,7 @@
     color: #000;
 }
 
-.text-white {
-    color: #fff !important;
-}
+
 
 
 
