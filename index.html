@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/music_player.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/videos.css">
     <title>Morphing</title>
 </head>
-<body id="top"> <!-- Добавлен id здесь -->
+<body id="top">
 <div class="background-image"></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
     <div class="container position-relative d-flex justify-content-between align-items-center">
-        <a class="navbar-brand mx-auto d-lg-none" href="#top">
+        <a class="navbar-brand mx-auto d-lg-none" href="#home">
             <img src="Images/gold_logo.png" alt="Orchestra Logo" class="navbar-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +63,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
                         <li><a class="dropdown-item" href="#images">Images</a></li>
-                        <li><a class="dropdown-item" href="#">Videos</a></li>
+                        <li><a class="dropdown-item" href="#videos">Videos</a></li>
                         <li><a class="dropdown-item" href="#discography">Discography</a></li>
                     </ul>
                 </li>
@@ -79,7 +80,6 @@
         </div>
     </div>
 </nav>
-
 
 <div id="home" class="video-container">
     <div class="video-overlay"></div>
@@ -125,6 +125,7 @@
             <div class="news-item">
                 <img src="Images/Sommerkonzert_New.png" alt="Brazil Tour">
                 <div class="news-content">
+                    <div class="upcoming-badge-news">Upcoming</div>
                     <h3 class="news-title">Sommerkonzert am 17.06.2024</h3>
                     <p class="news-text">
                         <a href="#concertsandtickets" class="tickets-link">TICKETS</a> <span class="s_price">75€</span> <br>
@@ -230,6 +231,28 @@
                             <li>Anna Voshege, Soprano</li>
                         </ul>
                         <div id="countdown" class="countdown-timer"></div> <!-- Countdown timer -->
+                        <div class="upcoming-badge">Upcoming</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="Images/Kevin_Kenner.JPG" alt="Kevin Kenner" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h5>Kevin Kenner & Vienna Morphing Soloists</h5>
+                        <p>The Vienna Morphing Soloists, the quintet of soloists from the renowned MORPHING CHAMBER ORCHESTRA,
+                            which is critically acclaimed as one of the best chamber orchestras in Europe.
+                            The leader and founder of the quintet is the outstanding violist, arranger, producer and cultural animator Tomasz Wabnic.
+                        </p>
+                        <h6>Featured Artists</h6>
+                        <ul>
+                            <li>Tomasz Wabnic, artistic director</li>
+                            <li>Yuuki Wong, concertmaster</li>
+                            <li>Josefina, violin</li>
+                            <li>Kevin Kenner, piano</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -470,6 +493,46 @@
     </div>
 </section>
 <!-- Ende der "Images" Section -->
+
+<section id="videos" class="py-5 text-center">
+    <div class="container">
+        <h2 class="section-title mb-4 text-white">Our Videos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="video-thumbnail">
+                    <a href="https://www.youtube.com/watch?v=tNysHlSMth8&t=69s" target="_blank">
+                        <img src="https://img.youtube.com/vi/tNysHlSMth8/hqdefault.jpg" alt="Video 1" class="img-fluid">
+                        <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                </div>
+                <p class="mt-2 text-white">Eroica Hall</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="video-thumbnail">
+                    <a href="https://www.youtube.com/watch?v=8USdUUbD_BY" target="_blank">
+                        <img src="https://img.youtube.com/vi/8USdUUbD_BY/hqdefault.jpg" alt="Video 2" class="img-fluid">
+                        <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                </div>
+                <p class="mt-2 text-white">Arvo Pärt, Fratres</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="video-thumbnail">
+                    <a href="https://www.youtube.com/watch?v=DQmxJls-UfQ" target="_blank">
+                        <img src="https://img.youtube.com/vi/DQmxJls-UfQ/hqdefault.jpg" alt="Video 3" class="img-fluid">
+                        <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                </div>
+                <p class="mt-2 text-white">Tawadros / Sokolov / MCO</p>
+            </div>
+        </div>
+        <a href="https://www.youtube.com/channel/yourchannel" target="_blank" class="btn btn-primary mt-4">Watch more of our Videos</a>
+    </div>
+</section>
+
+
+
+
 
 <section id="about" class="about-section">
     <h2 class="section-title">About Us</h2>
@@ -891,5 +954,7 @@
 <script src="js/tomasz.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/music_player.js"></script>
+<script src="js/navbar.js"></script>
+
 </body>
 </html>

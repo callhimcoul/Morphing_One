@@ -1,0 +1,65 @@
+#videos {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'VerlagBookItalic', sans-serif;
+    color: #ffcc00;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    filter: brightness(0.7);
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: rgba(255, 204, 0, 0.8);
+    transition: color 0.3s ease;
+}
+
+.video-thumbnail:hover .play-button {
+    color: rgba(255, 204, 0, 1);
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: white;
+    background: none;
+    border: 2px solid #d0b546;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: whitesmoke;
+    color: #000;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+
+

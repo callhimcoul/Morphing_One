@@ -122,5 +122,32 @@
     text-decoration: underline;
 }
 
+.upcoming-badge-news {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: ghostwhite;
+    color: black;
+    padding: 2px 8px; /* Halved padding */
+    border-radius: 5px;
+    font-size: 0.8rem; /* Halved font size */
+    font-family: 'VerlagBoldItalic', sans-serif;
+}
+
+.news-item {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .upcoming-badge-news {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2px 7px;
+        font-size: 0.6rem;
+    }
+}
+
 
 
