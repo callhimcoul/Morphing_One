@@ -20,12 +20,17 @@
     <link rel="stylesheet" href="css/music_player.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/videos.css">
+    <link rel="stylesheet" href="css/language_switch.css">
     <title>Morphing</title>
 </head>
 <body id="top">
 <div class="background-image"></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
     <div class="container position-relative d-flex justify-content-between align-items-center">
+        <div class="language-switch">
+            <button class="lang-button" data-lang="en">EN</button>
+            <button class="lang-button" data-lang="de">DE</button>
+        </div>
         <a class="navbar-brand mx-auto d-lg-none" href="#home">
             <img src="Images/gold_logo.png" alt="Orchestra Logo" class="navbar-logo">
         </a>
@@ -38,48 +43,41 @@
             </a>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOrchestra" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Orchestra
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOrchestra" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-en="Orchestra" data-de="Orchester">Orchestra</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownOrchestra">
-                        <li><a class="dropdown-item" href="#about">About</a></li>
-                        <li><a class="dropdown-item" href="#tomasz">Tomasz Wabnic</a></li>
-                        <li><a class="dropdown-item" href="#our-team">Team</a></li>
-                        <li><a class="dropdown-item" href="#musicians">Musicians</a></li>
+                        <li><a class="dropdown-item" href="#about" data-en="About" data-de="Über uns">About</a></li>
+                        <li><a class="dropdown-item" href="#tomasz" data-en="Tomasz Wabnic" data-de="Tomasz Wabnic">Tomasz Wabnic</a></li>
+                        <li><a class="dropdown-item" href="#our-team" data-en="Team" data-de="Team">Team</a></li>
+                        <li><a class="dropdown-item" href="#musicians" data-en="Musicians" data-de="Musiker">Musicians</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownConcerts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Concerts
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownConcerts" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-en="Concerts" data-de="Konzerte">Concerts</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownConcerts">
-                        <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                        <li><a class="dropdown-item" href="#concertsandtickets">Calendar</a></li>
+                        <li><a class="dropdown-item" href="#projects" data-en="Projects" data-de="Projekte">Projects</a></li>
+                        <li><a class="dropdown-item" href="#concertsandtickets" data-en="Calendar" data-de="Kalender">Calendar</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Media
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-en="Media" data-de="Medien">Media</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
-                        <li><a class="dropdown-item" href="#images">Images</a></li>
-                        <li><a class="dropdown-item" href="#videos">Videos</a></li>
-                        <li><a class="dropdown-item" href="#discography">Discography</a></li>
+                        <li><a class="dropdown-item" href="#images" data-en="Images" data-de="Bilder">Images</a></li>
+                        <li><a class="dropdown-item" href="#videos" data-en="Videos" data-de="Videos">Videos</a></li>
+                        <li><a class="dropdown-item" href="#discography" data-en="Discography" data-de="Diskografie">Discography</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Support
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-en="Support" data-de="Unterstützung">Support</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport">
-                        <li><a class="dropdown-item" href="#news">News</a></li>
-                        <li><a class="dropdown-item" href="#footer">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#news" data-en="News" data-de="Nachrichten">News</a></li>
+                        <li><a class="dropdown-item" href="#footer" data-en="Contact Us" data-de="Kontaktieren Sie uns">Contact Us</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
 
 <div id="home" class="video-container">
     <div class="video-overlay"></div>
@@ -120,118 +118,96 @@
 <!-- News Section -->
 <section id="news" class="news-section">
     <div class="container-sm">
-        <h2>Latest News & Updates</h2>
+        <h2 data-en="Latest News & Updates" data-de="Neueste Nachrichten und Updates">Latest News & Updates</h2>
         <div class="news-box">
             <div class="news-item">
-                <img src="Images/Sommerkonzert_New.png" alt="Brazil Tour">
+                <img src="Images/Sommerkonzert_New.png" alt="Summer Concert">
                 <div class="news-content">
-                    <div class="upcoming-badge-news">Upcoming</div>
-                    <h3 class="news-title">Summer Concert on 17.06.2024</h3>
+                    <div class="upcoming-badge-news" data-en="Upcoming" data-de="Kommend">Upcoming</div>
+                    <h3 class="news-title" data-en="Summer Concert on 17.06.2024" data-de="Sommerkonzert am 17.06.2024">Summer Concert on 17.06.2024</h3>
                     <p class="news-text">
-                        <a href="#concertsandtickets" class="tickets-link">TICKETS</a> <span class="s_price">75€</span> <br>
-                        VIA <span class="news_mail">INSTITUTE@MORPHINGMUSIC.COM</span> OR
-                        <span class="news_number">+436764233024</span> AND AT THE EVENING BOX OFFICE <br><br>
-                        THEATERMUSEUM / Eroica Saal Lobkowitzplatz 2, 1010 Wien <br><br>
-                        For more information, <a href="https://drive.google.com/file/d/1cZUkM7OldVitEb8jri8sQjlAqL7KgyQX/view?usp=sharing" target="_blank" class="info-link">click here</a>.
+                        <a href="#concertsandtickets" class="tickets-link" data-en="TICKETS" data-de="TICKETS">TICKETS</a> <span class="s_price">75€</span> <br>
+                        <span data-en="VIA" data-de="ÜBER">VIA</span> <span class="news_mail">INSTITUTE@MORPHINGMUSIC.COM</span> <span data-en="OR" data-de="ODER">OR</span>
+                        <span class="news_number">+436764233024</span> <span data-en="AND AT THE EVENING BOX OFFICE" data-de="UND AN DER ABENDKASSE">AND AT THE EVENING BOX OFFICE</span> <br><br>
+                        <span data-en="THEATERMUSEUM / Eroica Saal Lobkowitzplatz 2, 1010 Wien" data-de="THEATERMUSEUM / Eroica Saal Lobkowitzplatz 2, 1010 Wien">THEATERMUSEUM / Eroica Saal Lobkowitzplatz 2, 1010 Wien</span> <br><br>
+                        <span data-en="For more information," data-de="Für weitere Informationen,">For more information,</span> <a href="https://drive.google.com/file/d/1cZUkM7OldVitEb8jri8sQjlAqL7KgyQX/view?usp=sharing" target="_blank" class="info-link" data-en="click here" data-de="hier klicken">click here</a>.
                     </p>
-                    <p class="news-date">June 17, 2024</p>
+                    <p class="news-date" data-en="June 17, 2024" data-de="17. Juni 2024">June 17, 2024</p>
                 </div>
             </div>
 
             <div class="news-item">
                 <img src="Images/Brazil_Tour.png" alt="Brazil Tour">
                 <div class="news-content">
-                    <h3 class="news-title">Morphing celebrates its success on tour in Brazil</h3>
-                    <p class="news-text">The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city Brazilian tour
-                        with pianist Álvaro Siviero, where they performed Viennese classics by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1.
-                        The tour was the result of a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic and they are
-                        already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum of Art and Technology in Krakow, Poland
-                        on the 18th September. Mr. Wabnic looks forward to bringing Chopin back to his homeland and reciprocating the same friendship and hospitality
-                        to Mr. Siviero in Europe!</p>
-                    <p class="news-date">April 15, 2024</p>
+                    <h3 class="news-title" data-en="Morphing celebrates its success on tour in Brazil" data-de="Morphing feiert seinen Erfolg auf Tournee in Brasilien">Morphing celebrates its success on tour in Brazil</h3>
+                    <p class="news-text" data-en="The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city Brazilian tour with pianist Álvaro Siviero, where they performed Viennese classics by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1. The tour was the result of a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic and they are already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum of Art and Technology in Krakow, Poland on the 18th September. Mr. Wabnic looks forward to bringing Chopin back to his homeland and reciprocating the same friendship and hospitality to Mr. Siviero in Europe!" data-de="Das Morphing Chamber Orchestra ist nach einer erfolgreichen 4-Städte-Tournee durch Brasilien mit dem Pianisten Álvaro Siviero wieder in Europa gelandet, wo sie Wiener Klassiker von Mozart, Kreisler und Strauss sowie Chopins Konzert Nr. 1 aufführten. Die Tournee war das Ergebnis einer langjährigen Zusammenarbeit zwischen Herrn Siviero und dem künstlerischen Leiter des MCO, Tomasz Wabnic, und sie bereiten sich bereits auf kommende Projekte vor! Als nächstes steht ein Konzert im Manggha Japanese Museum of Art and Technology in Krakau, Polen, am 18. September an. Herr Wabnic freut sich darauf, Chopin in seine Heimat zurückzubringen und Herrn Siviero in Europa die gleiche Freundschaft und Gastfreundschaft zu erwidern!">The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city Brazilian tour with pianist Álvaro Siviero, where they performed Viennese classics by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1. The tour was the result of a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic and they are already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum of Art and Technology in Krakow, Poland on the 18th September. Mr. Wabnic looks forward to bringing Chopin back to his homeland and reciprocating the same friendship and hospitality to Mr. Siviero in Europe!</p>
+                    <p class="news-date" data-en="April 15, 2024" data-de="15. April 2024">April 15, 2024</p>
                 </div>
             </div>
             <div class="news-item">
                 <img src="Images/Classique_In_Blue1.png" alt="Classique In Blue">
                 <div class="news-content">
-                    <h3 class="news-title">CLASSIQUE "IN BLUE"</h3>
-                    <p class="news-text">Cathédrale St. Louis, <br> Les Invalides Paris <br> Makoto Ozone & Franco Avitabile, pianos <br> Morphing Chamber Orchestra <br> Tomasz Wabnic, artistic director & viola Yuuki Wong, violin</p>
-                    <p class="news-date">14th November 2023, 20:00</p>
+                    <h3 class="news-title" data-en='CLASSIQUE "IN BLUE"' data-de='KLASSIK "IN BLAU"'>CLASSIQUE "IN BLUE"</h3>
+                    <p class="news-text" data-en="Cathédrale St. Louis, Les Invalides Paris, Makoto Ozone & Franco Avitabile, pianos, Morphing Chamber Orchestra, Tomasz Wabnic, artistic director & viola Yuuki Wong, violin" data-de="Cathédrale St. Louis, Les Invalides Paris, Makoto Ozone & Franco Avitabile, Klaviere, Morphing Chamber Orchestra, Tomasz Wabnic, künstlerischer Leiter & Bratsche Yuuki Wong, Violine">Cathédrale St. Louis, Les Invalides Paris, Makoto Ozone & Franco Avitabile, pianos, Morphing Chamber Orchestra, Tomasz Wabnic, artistic director & viola Yuuki Wong, violin</p>
+                    <p class="news-date" data-en="14th November 2023, 20:00" data-de="14. November 2023, 20:00">14th November 2023, 20:00</p>
                 </div>
             </div>
             <div class="news-item">
                 <img src="Images/Mystical_Morphing.png" alt="Mystical Morphing">
                 <div class="news-content">
-                    <h3 class="news-title">MYSTICAL MORPHING <br> WITH ANDREAS SCHOLL <br> BACH / PÄRT</h3>
-                    <p class="news-text">Minoritenkirche <br> Minoritenplatz 2A, 1010 Vienna</p>
-                    <p class="news-date">4th October 8pm, 2023</p>
+                    <h3 class="news-title" data-en="MYSTICAL MORPHING WITH ANDREAS SCHOLL BACH / PÄRT" data-de="MYSTICAL MORPHING MIT ANDREAS SCHOLL BACH / PÄRT">MYSTICAL MORPHING WITH ANDREAS SCHOLL BACH / PÄRT</h3>
+                    <p class="news-text" data-en="Minoritenkirche Minoritenplatz 2A, 1010 Vienna" data-de="Minoritenkirche Minoritenplatz 2A, 1010 Wien">Minoritenkirche Minoritenplatz 2A, 1010 Vienna</p>
+                    <p class="news-date" data-en="4th October 8pm, 2023" data-de="4. Oktober 20 Uhr, 2023">4th October 8pm, 2023</p>
                 </div>
             </div>
             <div class="news-item">
                 <img src="Images/Nomination_Arvo_Paert.png" alt="Nomination / Arvo Paert">
                 <div class="news-content">
-                    <h3 class="news-title">THE MORPHING CHAMBER ORCHESTRA HAS BEEN NOMINATED IN 4 CATEGORIES FOR ITS ALBUM ARVO PÄRT „STABAT MATER" / ÀPARTE!</h3>
-                    <p class="news-text">Orchestra of the Year <br>
-                        Opera Recording of the Year [Aleksandra Kurzak, Andreas Scholl & Roberto Alagna] <br>
-                        Conductor of the Year [Tomasz Wabnic] <br>
-                        Vocalist of the Year [Andreas Scholl]</p>
-                    <p class="news-date">- - -</p>
+                    <h3 class="news-title" data-en='THE MORPHING CHAMBER ORCHESTRA HAS BEEN NOMINATED IN 4 CATEGORIES FOR ITS ALBUM ARVO PÄRT "STABAT MATER" / ÀPARTE!' data-de='DAS MORPHING CHAMBER ORCHESTRA WURDE IN 4 KATEGORIEN FÜR SEIN ALBUM ARVO PÄRT "STABAT MATER" / ÀPARTE! NOMINIERT'>THE MORPHING CHAMBER ORCHESTRA HAS BEEN NOMINATED IN 4 CATEGORIES FOR ITS ALBUM ARVO PÄRT "STABAT MATER" / ÀPARTE!</h3>
+                    <p class="news-text" data-en="Orchestra of the Year, Opera Recording of the Year [Aleksandra Kurzak, Andreas Scholl & Roberto Alagna], Conductor of the Year [Tomasz Wabnic], Vocalist of the Year [Andreas Scholl]" data-de="Orchester des Jahres, Opernaufnahme des Jahres [Aleksandra Kurzak, Andreas Scholl & Roberto Alagna], Dirigent des Jahres [Tomasz Wabnic], Sänger des Jahres [Andreas Scholl]">Orchestra of the Year, Opera Recording of the Year [Aleksandra Kurzak, Andreas Scholl & Roberto Alagna], Conductor of the Year [Tomasz Wabnic], Vocalist of the Year [Andreas Scholl]</p>
+                    <p class="news-date" data-en="- -" data-de="- -">- -</p>
                 </div>
             </div>
             <div class="news-item">
                 <img src="Images/Arvo_Paert.png" alt="Arvo Paert Album">
                 <div class="news-content">
-                    <h3 class="news-title">CD-Release 'Stabat Mater'</h3>
-                    <p class="news-text">Label www.aparte.com Paris <br> Ton Master: Nicolas Bartholomee
-                        <br> Producer: Aparte and Morphing
-                        <br> Solists:
-                        <br> Aleksandra Kurzak – Sopran
-                        <br> Andreas Scholl – Countertenor
-                        <br> Roberto Alagna – Tenor
-                        <br> Tomasz Wabnic – Viola, Artistic Director
-                        <br> Christian Erny – Dirigent (Stabat Mater, Wallfahrtslied)</p>
-                    <p class="news-date">October 28, 2022</p>
+                    <h3 class="news-title" data-en="CD-Release 'Stabat Mater'" data-de="CD-Veröffentlichung 'Stabat Mater'">CD-Release 'Stabat Mater'</h3>
+                    <p class="news-text" data-en="Label www.aparte.com Paris, Ton Master: Nicolas Bartholomee, Producer: Aparte and Morphing, Solists: Aleksandra Kurzak – Sopran, Andreas Scholl – Countertenor, Roberto Alagna – Tenor, Tomasz Wabnic – Viola, Artistic Director, Christian Erny – Dirigent (Stabat Mater, Wallfahrtslied)" data-de="Label www.aparte.com Paris, Tonmeister: Nicolas Bartholomee, Produzent: Aparte und Morphing, Solisten: Aleksandra Kurzak – Sopran, Andreas Scholl – Countertenor, Roberto Alagna – Tenor, Tomasz Wabnic – Viola, Künstlerischer Leiter, Christian Erny – Dirigent (Stabat Mater, Wallfahrtslied)">Label www.aparte.com Paris, Ton Master: Nicolas Bartholomee, Producer: Aparte and Morphing, Solists: Aleksandra Kurzak – Sopran, Andreas Scholl – Countertenor, Roberto Alagna – Tenor, Tomasz Wabnic – Viola, Artistic Director, Christian Erny – Dirigent (Stabat Mater, Wallfahrtslied)</p>
+                    <p class="news-date" data-en="October 28, 2022" data-de="28. Oktober 2022">October 28, 2022</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+
 <!-- Projects Section -->
 <section id="projects" class="projects-section">
-    <h2>Projects</h2>
+    <h2 data-en="Projects" data-de="Projekte">Projects</h2>
     <div id="projectsCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="project-item">
                     <div class="project-image-container">
-                        <div class="click-instruction">Click the image!</div>
+                        <div class="click-instruction" data-en="Click the image!" data-de="Klicke auf das Bild!">Click the image!</div>
                         <a href="Strauss/Strauss.html">
                             <img src="Images/StraussMain.png" alt="Project Image" class="project-image pulsing-image">
                         </a>
                     </div>
                     <div class="project-content">
-                        <h5>MORPHING x JOHANN STRAUSS <br>
-                            The 200th anniversary in 2025</h5>
-                        <p>Based in Vienna, the heart of the former Danube Monarchy, the cosmopolitan VIENNA MORPHING ORCHESTRA
-                            is more than familiar with the works of the Strauss dynasty. The 200th anniversary of Johann Strauss's
-                            son is the occasion for a wonderful musical celebration! From gallops to polkas to the most famous waltzes,
-                            nothing is missing. Brahms was already enchanted by Strauss: "He is the only one I envy - he is dripping with music,
-                            he always comes up with something." Following the brilliant success of the collaboration with singer Timna Brauer in November 2023
-                            at the Vienna Konzerthaus she will now also appear as a guest soloist at the Strauss Gala. Since its foundation, the MORPHING ORCHESTRA
-                            has been characterized by collaborations with musicians far removed from classical music. And Johann actually swings too! Timna Brauer
-                            swings unconventionally and humorously through the sound palace of the Waltz King. She juggles virtuosically between classical music,
-                            jazz and fantasy, Strauss and Mozart in a different way.</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="MORPHING x JOHANN STRAUSS The 200th anniversary in 2025" data-de="MORPHING x JOHANN STRAUSS Das 200-jährige Jubiläum im Jahr 2025">MORPHING x JOHANN STRAUSS <br> The 200th anniversary in 2025</h5>
+                        <p data-en="Based in Vienna, the heart of the former Danube Monarchy, the cosmopolitan VIENNA MORPHING ORCHESTRA is more than familiar with the works of the Strauss dynasty. The 200th anniversary of Johann Strauss's son is the occasion for a wonderful musical celebration! From gallops to polkas to the most famous waltzes, nothing is missing. Brahms was already enchanted by Strauss: 'He is the only one I envy - he is dripping with music, he always comes up with something.' Following the brilliant success of the collaboration with singer Timna Brauer in November 2023 at the Vienna Konzerthaus she will now also appear as a guest soloist at the Strauss Gala. Since its foundation, the MORPHING ORCHESTRA has been characterized by collaborations with musicians far removed from classical music. And Johann actually swings too! Timna Brauer swings unconventionally and humorously through the sound palace of the Waltz King. She juggles virtuosically between classical music, jazz and fantasy, Strauss and Mozart in a different way." data-de="Das in Wien, dem Herzen der ehemaligen Donau-Monarchie, ansässige kosmopolitische VIENNA MORPHING ORCHESTRA ist mit den Werken der Strauss-Dynastie mehr als vertraut. Das 200-jährige Jubiläum des Sohnes von Johann Strauss ist Anlass für eine wunderbare musikalische Feier! Von Galopps über Polkas bis hin zu den berühmtesten Walzern fehlt nichts. Brahms war bereits von Strauss begeistert: 'Er ist der einzige, den ich beneide - er tropft vor Musik, er fällt immer etwas ein.' Nach dem brillanten Erfolg der Zusammenarbeit mit der Sängerin Timna Brauer im November 2023 im Wiener Konzerthaus wird sie nun auch als Gastsängerin bei der Strauss-Gala auftreten. Seit seiner Gründung zeichnet sich das MORPHING ORCHESTRA durch Zusammenarbeit mit Musikern aus, die weit von der klassischen Musik entfernt sind. Und Johann schwingt tatsächlich auch! Timna Brauer schwingt unkonventionell und humorvoll durch den Klangpalast des Walzerkönigs. Sie jongliert virtuos zwischen klassischer Musik, Jazz und Fantasie, Strauss und Mozart auf andere Weise.">Based in Vienna, the heart of the former Danube Monarchy, the cosmopolitan VIENNA MORPHING ORCHESTRA is more than familiar with the works of the Strauss dynasty. The 200th anniversary of Johann Strauss's son is the occasion for a wonderful musical celebration! From gallops to polkas to the most famous waltzes, nothing is missing. Brahms was already enchanted by Strauss: 'He is the only one I envy - he is dripping with music, he always comes up with something.' Following the brilliant success of the collaboration with singer Timna Brauer in November 2023 at the Vienna Konzerthaus she will now also appear as a guest soloist at the Strauss Gala. Since its foundation, the MORPHING ORCHESTRA has been characterized by collaborations with musicians far removed from classical music. And Johann actually swings too! Timna Brauer swings unconventionally and humorously through the sound palace of the Waltz King. She juggles virtuosically between classical music, jazz and fantasy, Strauss and Mozart in a different way.</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Tomasz Wabnic, artistic director</li>
-                            <li>Timna Brauer, Vocals</li>
-                            <li>Niklas Liepe, Violin</li>
-                            <li>Julia Sturzlbaum, Soprano</li>
-                            <li>Anna Voshege, Soprano</li>
+                            <li data-en="Tomasz Wabnic, artistic director" data-de="Tomasz Wabnic, künstlerischer Leiter">Tomasz Wabnic, artistic director</li>
+                            <li data-en="Timna Brauer, Vocals" data-de="Timna Brauer, Gesang">Timna Brauer, Vocals</li>
+                            <li data-en="Niklas Liepe, Violin" data-de="Niklas Liepe, Violine">Niklas Liepe, Violin</li>
+                            <li data-en="Julia Sturzlbaum, Soprano" data-de="Julia Sturzlbaum, Sopran">Julia Sturzlbaum, Soprano</li>
+                            <li data-en="Anna Voshege, Soprano" data-de="Anna Voshege, Sopran">Anna Voshege, Soprano</li>
                         </ul>
                         <div id="countdown" class="countdown-timer"></div> <!-- Countdown timer -->
-                        <div class="upcoming-badge">Upcoming</div>
+                        <div class="upcoming-badge" data-en="Upcoming" data-de="Kommend">Upcoming</div>
                     </div>
                 </div>
             </div>
@@ -241,17 +217,14 @@
                         <img src="Images/Kevin_Kenner.JPG" alt="Kevin Kenner" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>Kevin Kenner & Vienna Morphing Soloists</h5>
-                        <p>The Vienna Morphing Soloists, the quintet of soloists from the renowned MORPHING CHAMBER ORCHESTRA,
-                            which is critically acclaimed as one of the best chamber orchestras in Europe.
-                            The leader and founder of the quintet is the outstanding violist, arranger, producer and cultural animator Tomasz Wabnic.
-                        </p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="Kevin Kenner & Vienna Morphing Soloists" data-de="Kevin Kenner & Vienna Morphing Solisten">Kevin Kenner & Vienna Morphing Soloists</h5>
+                        <p data-en="The Vienna Morphing Soloists, the quintet of soloists from the renowned MORPHING CHAMBER ORCHESTRA, which is critically acclaimed as one of the best chamber orchestras in Europe. The leader and founder of the quintet is the outstanding violist, arranger, producer and cultural animator Tomasz Wabnic." data-de="Die Vienna Morphing Soloists, das Quintett von Solisten des renommierten MORPHING CHAMBER ORCHESTRA, das von Kritikern als eines der besten Kammerorchester Europas gefeiert wird. Der Leiter und Gründer des Quintetts ist der herausragende Bratschist, Arrangeur, Produzent und Kulturanimateur Tomasz Wabnic.">The Vienna Morphing Soloists, the quintet of soloists from the renowned MORPHING CHAMBER ORCHESTRA, which is critically acclaimed as one of the best chamber orchestras in Europe. The leader and founder of the quintet is the outstanding violist, arranger, producer and cultural animator Tomasz Wabnic.</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Tomasz Wabnic, artistic director</li>
-                            <li>Yuuki Wong, concertmaster</li>
-                            <li>Josefina, violin</li>
-                            <li>Kevin Kenner, piano</li>
+                            <li data-en="Tomasz Wabnic, artistic director" data-de="Tomasz Wabnic, künstlerischer Leiter">Tomasz Wabnic, artistic director</li>
+                            <li data-en="Yuuki Wong, concertmaster" data-de="Yuuki Wong, Konzertmeister">Yuuki Wong, concertmaster</li>
+                            <li data-en="Josefina, violin" data-de="Josefina, Violine">Josefina, violin</li>
+                            <li data-en="Kevin Kenner, piano" data-de="Kevin Kenner, Klavier">Kevin Kenner, piano</li>
                         </ul>
                     </div>
                 </div>
@@ -262,18 +235,12 @@
                         <img src="Images/Brazil_Tour2.png" alt="Brazil Tour" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>MORPHING CELEBRATES ITS SUCCESS ON TOUR IN BRAZIL</h5>
-                        <p>The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city
-                            Brazilian tour with pianist Álvaro Siviero, where they performed Viennese classics
-                            by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1. The tour was the result of
-                            a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic
-                            and they are already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum
-                            of Art and Technology in Krakow, Poland on the 18th September. Mr. Wabnic looks forward to bringing Chopin
-                            back to his homeland and reciprocating the same friendship and hospitality to Mr. Siviero in Europe!</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="MORPHING CELEBRATES ITS SUCCESS ON TOUR IN BRAZIL" data-de="MORPHING FEIERT SEINEN ERFOLG AUF TOURNEE IN BRASILIEN">MORPHING CELEBRATES ITS SUCCESS ON TOUR IN BRAZIL</h5>
+                        <p data-en="The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city Brazilian tour with pianist Álvaro Siviero, where they performed Viennese classics by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1. The tour was the result of a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic and they are already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum of Art and Technology in Krakow, Poland on the 18th September. Mr. Wabnic looks forward to bringing Chopin back to his homeland and reciprocating the same friendship and hospitality to Mr. Siviero in Europe!" data-de="Das Morphing Chamber Orchestra ist nach einer erfolgreichen 4-Städte-Tournee durch Brasilien mit dem Pianisten Álvaro Siviero wieder in Europa gelandet, wo sie Wiener Klassiker von Mozart, Kreisler und Strauss sowie Chopins Konzert Nr. 1 aufführten. Die Tournee war das Ergebnis einer langjährigen Zusammenarbeit zwischen Herrn Siviero und dem künstlerischen Leiter des MCO, Tomasz Wabnic, und sie bereiten sich bereits auf kommende Projekte vor! Als nächstes steht ein Konzert im Manggha Japanese Museum of Art and Technology in Krakau, Polen, am 18. September an. Herr Wabnic freut sich darauf, Chopin in seine Heimat zurückzubringen und Herrn Siviero in Europa die gleiche Freundschaft und Gastfreundschaft zu erwidern!">The Morphing Chamber Orchestra has landed back in Europe after a successful 4-city Brazilian tour with pianist Álvaro Siviero, where they performed Viennese classics by Mozart, Kreisler and Strauss and Chopin’s Concerto no. 1. The tour was the result of a long-standing collaboration between Mr. Siviero and MCO artistic director Tomasz Wabnic and they are already preparing for upcoming projects! Up next is a concert at the Manggha Japanese Museum of Art and Technology in Krakow, Poland on the 18th September. Mr. Wabnic looks forward to bringing Chopin back to his homeland and reciprocating the same friendship and hospitality to Mr. Siviero in Europe!</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Tomasz Wabnic, artistic director</li>
-                            <li>Yuuki Wong, concertmaster</li>
+                            <li data-en="Tomasz Wabnic, artistic director" data-de="Tomasz Wabnic, künstlerischer Leiter">Tomasz Wabnic, artistic director</li>
+                            <li data-en="Yuuki Wong, concertmaster" data-de="Yuuki Wong, Konzertmeister">Yuuki Wong, concertmaster</li>
                         </ul>
                     </div>
                 </div>
@@ -284,14 +251,14 @@
                         <img src="Images/Classique_In_Blue2.png" alt="Classique In Blue" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>CLASSIQUE "IN BLUE"</h5>
-                        <p>14th November 2023, 20:00 <br> Cathédrale St. Louis, Les Invalides Paris</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en='CLASSIQUE "IN BLUE"' data-de='KLASSIK "IN BLAU"'>CLASSIQUE "IN BLUE"</h5>
+                        <p data-en="14th November 2023, 20:00 Cathédrale St. Louis, Les Invalides Paris" data-de="14. November 2023, 20:00 Cathédrale St. Louis, Les Invalides Paris">14th November 2023, 20:00 Cathédrale St. Louis, Les Invalides Paris</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Makoto Ozone & Franco Avitabile, pianos</li>
-                            <li>Morphing Chamber Orchestra</li>
-                            <li>Tomasz Wabnic, artistic director & viola</li>
-                            <li>Yuuki Wong, violin & concertmaster</li>
+                            <li data-en="Makoto Ozone & Franco Avitabile, pianos" data-de="Makoto Ozone & Franco Avitabile, Klaviere">Makoto Ozone & Franco Avitabile, pianos</li>
+                            <li data-en="Morphing Chamber Orchestra" data-de="Morphing Chamber Orchestra">Morphing Chamber Orchestra</li>
+                            <li data-en="Tomasz Wabnic, artistic director & viola" data-de="Tomasz Wabnic, künstlerischer Leiter & Bratsche">Tomasz Wabnic, artistic director & viola</li>
+                            <li data-en="Yuuki Wong, violin & concertmaster" data-de="Yuuki Wong, Violine & Konzertmeister">Yuuki Wong, violin & concertmaster</li>
                         </ul>
                     </div>
                 </div>
@@ -302,34 +269,13 @@
                         <img src="Images/Mystical_Morphing.png" alt="Mystical Morphing" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>MYSTICAL MORPHING <br> with Andreas Scholl <br>
-                            Bach / Pärt
-                        </h5>
-                        <p>The internationally celebrated countertenor Andreas Scholl
-                            and the sought-after Viennese ensemble Morphing Chamber Orchestra
-                            next autumn will present a program for our time: <br>
-                            the concert mystical morphing on October 4th, 2023 brings together the baroque master J.S.Bach
-                            with the contemporary icon Arvo Pärt and immerses the audience in the music of silence. A moment
-                            of calm in challenging times. The current album Stabat Mater, which contains the works by Arvo Pärt
-                            played in the program in this line-up, was nominated in four categories for the ECHO Klassik Prize and
-                            the Edison Classic Award. The MCO, soloist Andreas Scholl, the recording itself and artistic director Tomasz Wabnic
-                            in his role as primusinter pares, as a conductor from the ensemble, were honored with nominations. <br>
-                            An evening with a world-class singer: appearances at the Salzburg Festival, at the New York MET and at
-                            the London Festival The classical spectacle Last Night of the Proms gave Andreas Scholl a unique selling
-                            point as a countertenor. Its remarkable Voice is documented on a variety of recordings - Antonio Vivaldi's
-                            Cum Dederit, which appeared in the James Bond film, received particular attention Specter sounds. Andreas Scholl's
-                            association with Austria includes, among other things, a professorship for baroque singing at the Salzburg Mozarteum.
-                            Mystical Morphing celebrates the baroque master Johann Sebastian Bach. The German composer is known for both his virtuosity
-                            He is known for his keyboard works and harmonious works of art as well as for his deeply felt spirituality. His music harmonizes
-                            and contrasts equally in this program with that of the contemporary master Pärt, who shares the pursuit of spirituality with him. <br>
-                            In addition to selected Arias and cantatas by J.S.Bach (“Oh stay, my dearest life”, “Out of deep distress I cry out to you”, slumber your dull eyes”),
-                            Stylistically and emotionally performed by countertenor Andreas Scholl, there is also a new arrangement of the Organ Sonata No. 4 by Tomasz Wabnic discover -
-                            and last but not least, enjoy the majestic air. The MCO presents Bach in chamber music harmony, sometimes in smaller, sometimes larger ensembles.</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="MYSTICAL MORPHING with Andreas Scholl Bach / Pärt" data-de="MYSTICAL MORPHING mit Andreas Scholl Bach / Pärt">MYSTICAL MORPHING <br> with Andreas Scholl <br> Bach / Pärt</h5>
+                        <p data-en="The internationally celebrated countertenor Andreas Scholl and the sought-after Viennese ensemble Morphing Chamber Orchestra next autumn will present a program for our time: the concert mystical morphing on October 4th, 2023 brings together the baroque master J.S.Bach with the contemporary icon Arvo Pärt and immerses the audience in the music of silence. A moment of calm in challenging times. The current album Stabat Mater, which contains the works by Arvo Pärt played in the program in this line-up, was nominated in four categories for the ECHO Klassik Prize and the Edison Classic Award. The MCO, soloist Andreas Scholl, the recording itself and artistic director Tomasz Wabnic in his role as primusinter pares, as a conductor from the ensemble, were honored with nominations. An evening with a world-class singer: appearances at the Salzburg Festival, at the New York MET and at the London Festival The classical spectacle Last Night of the Proms gave Andreas Scholl a unique selling point as a countertenor. Its remarkable Voice is documented on a variety of recordings - Antonio Vivaldi's Cum Dederit, which appeared in the James Bond film, received particular attention Specter sounds. Andreas Scholl's association with Austria includes, among other things, a professorship for baroque singing at the Salzburg Mozarteum. Mystical Morphing celebrates the baroque master Johann Sebastian Bach. The German composer is known for both his virtuosity He is known for his keyboard works and harmonious works of art as well as for his deeply felt spirituality. His music harmonizes and contrasts equally in this program with that of the contemporary master Pärt, who shares the pursuit of spirituality with him. In addition to selected Arias and cantatas by J.S.Bach (“Oh stay, my dearest life”, “Out of deep distress I cry out to you”, slumber your dull eyes”), Stylistically and emotionally performed by countertenor Andreas Scholl, there is also a new arrangement of the Organ Sonata No. 4 by Tomasz Wabnic discover - and last but not least, enjoy the majestic air. The MCO presents Bach in chamber music harmony, sometimes in smaller, sometimes larger ensembles." data-de="Der international gefeierte Countertenor Andreas Scholl und das gefragte Wiener Ensemble Morphing Chamber Orchestra werden nächsten Herbst ein Programm für unsere Zeit präsentieren: Das Konzert Mystical Morphing am 4. Oktober 2023 vereint den barocken Meister J.S.Bach mit der zeitgenössischen Ikone Arvo Pärt und taucht das Publikum in die Musik der Stille ein. Ein Moment der Ruhe in herausfordernden Zeiten. Das aktuelle Album Stabat Mater, das die im Programm gespielten Werke von Arvo Pärt in dieser Besetzung enthält, wurde in vier Kategorien für den ECHO Klassik-Preis und den Edison Classic Award nominiert. Das MCO, der Solist Andreas Scholl, die Aufnahme selbst und der künstlerische Leiter Tomasz Wabnic in seiner Rolle als Primus inter pares, als Dirigent aus dem Ensemble, wurden mit Nominierungen geehrt. Ein Abend mit einem Weltklasse-Sänger: Auftritte beim Salzburger Festspiel, an der New Yorker MET und beim London Festival The classical spectacle Last Night of the Proms verliehen Andreas Scholl als Countertenor einen einzigartigen Verkaufspunkt. Seine bemerkenswerte Stimme ist auf einer Vielzahl von Aufnahmen dokumentiert - Antonio Vivaldis Cum Dederit, das im James-Bond-Film Specter zu hören war, erregte besondere Aufmerksamkeit. Andreas Scholls Verbindung zu Österreich umfasst unter anderem eine Professur für Barockgesang am Salzburger Mozarteum. Mystical Morphing feiert den barocken Meister Johann Sebastian Bach. Der deutsche Komponist ist sowohl für seine Virtuosität als auch für seine harmonischen Kunstwerke sowie für seine tief empfundene Spiritualität bekannt. Seine Musik harmoniert und kontrastiert gleichermaßen in diesem Programm mit der des zeitgenössischen Meisters Pärt, der das Streben nach Spiritualität mit ihm teilt. Neben ausgewählten Arien und Kantaten von J.S.Bach (“Oh stay, my dearest life”, “Out of deep distress I cry out to you”, slumber your dull eyes”), die stilistisch und emotional von Countertenor Andreas Scholl aufgeführt werden, gibt es auch eine neue Bearbeitung der Orgelsonate Nr. 4 von Tomasz Wabnic zu entdecken - und last but not least, genießen Sie die majestätische Air. Das MCO präsentiert Bach in kammermusikalischer Harmonie, manchmal in kleineren, manchmal größeren Ensembles.">The internationally celebrated countertenor Andreas Scholl and the sought-after Viennese ensemble Morphing Chamber Orchestra next autumn will present a program for our time: the concert mystical morphing on October 4th, 2023 brings together the baroque master J.S.Bach with the contemporary icon Arvo Pärt and immerses the audience in the music of silence. A moment of calm in challenging times. The current album Stabat Mater, which contains the works by Arvo Pärt played in the program in this line-up, was nominated in four categories for the ECHO Klassik Prize and the Edison Classic Award. The MCO, soloist Andreas Scholl, the recording itself and artistic director Tomasz Wabnic in his role as primusinter pares, as a conductor from the ensemble, were honored with nominations. An evening with a world-class singer: appearances at the Salzburg Festival, at the New York MET and at the London Festival The classical spectacle Last Night of the Proms gave Andreas Scholl a unique selling point as a countertenor. Its remarkable Voice is documented on a variety of recordings - Antonio Vivaldi's Cum Dederit, which appeared in the James Bond film, received particular attention Specter sounds. Andreas Scholl's association with Austria includes, among other things, a professorship for baroque singing at the Salzburg Mozarteum. Mystical Morphing celebrates the baroque master Johann Sebastian Bach. The German composer is known for both his virtuosity He is known for his keyboard works and harmonious works of art as well as for his deeply felt spirituality. His music harmonizes and contrasts equally in this program with that of the contemporary master Pärt, who shares the pursuit of spirituality with him. In addition to selected Arias and cantatas by J.S.Bach (“Oh stay, my dearest life”, “Out of deep distress I cry out to you”, slumber your dull eyes”), Stylistically and emotionally performed by countertenor Andreas Scholl, there is also a new arrangement of the Organ Sonata No. 4 by Tomasz Wabnic discover - and last but not least, enjoy the majestic air. The MCO presents Bach in chamber music harmony, sometimes in smaller, sometimes larger ensembles.</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Arvo Pärt, composer</li>
-                            <li>Tomasz Wabnic, artistic director & viola</li>
-                            <li>Andreas Scholl, singer</li>
+                            <li data-en="Arvo Pärt, composer" data-de="Arvo Pärt, Komponist">Arvo Pärt, composer</li>
+                            <li data-en="Tomasz Wabnic, artistic director & viola" data-de="Tomasz Wabnic, künstlerischer Leiter & Bratsche">Tomasz Wabnic, artistic director & viola</li>
+                            <li data-en="Andreas Scholl, singer" data-de="Andreas Scholl, Sänger">Andreas Scholl, singer</li>
                         </ul>
                     </div>
                 </div>
@@ -340,32 +286,16 @@
                         <img src="Images/MORPHING_FOR_HUMANITY.jpg" alt="Mystical Morphing" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>MORPHING FOR HUMANITY FOR THE MIDDLE EAST</h5>
-                        <p>Music is the only universal language that is able to overcome opposites!
-                            “For us musicians, it is not only a privilege, but also a responsibility not
-                            to tire of spreading the message of peace, solidarity and building bridges,” says
-                            the artistic director of the Morphing Chamber Orchestra, Tomasz Wabnic. With the charity
-                            concert for more humanity, the orchestra would like to express its solidarity with the victims
-                            of terror and war in Israel and Palestine. Morphing for Humanity, change towards more humanity,
-                            is both a call and a program title. At Timna Brauer's request, the line-up of soloists was
-                            supplemented by the Palestinian musician Marwan Abado. After costs have been covered, all
-                            proceeds go to the Red Cross for emergency aid on site. We look forward to your valued visit! <br>
-
-                            Special thanks to our partners: <br>
-                            David Lansky, Ganzger, Goeth + Partner <br>
-
-                            16th November 2023 / 7.30pm <br>
-                            Wiener Konzerthaus Mozart-Saal Vienna <br>
-                            Timna Brauer, Gesang <br> Marwan Abado, Ud, Gesang <br> Makoto Ozone, Klavier <br> Ory Schneor,
-                            Flöte <br> Morphing Chamber Orchestra <br> Tomasz Wabnic, Viola, Künstlerische Leitung</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="MORPHING FOR HUMANITY FOR THE MIDDLE EAST" data-de="MORPHING FÜR DIE MENSCHHEIT FÜR DEN MITTLEREN OSTEN">MORPHING FOR HUMANITY FOR THE MIDDLE EAST</h5>
+                        <p data-en="Music is the only universal language that is able to overcome opposites! “For us musicians, it is not only a privilege, but also a responsibility not to tire of spreading the message of peace, solidarity and building bridges,” says the artistic director of the Morphing Chamber Orchestra, Tomasz Wabnic. With the charity concert for more humanity, the orchestra would like to express its solidarity with the victims of terror and war in Israel and Palestine. Morphing for Humanity, change towards more humanity, is both a call and a program title. At Timna Brauer's request, the line-up of soloists was supplemented by the Palestinian musician Marwan Abado. After costs have been covered, all proceeds go to the Red Cross for emergency aid on site. We look forward to your valued visit! Special thanks to our partners: David Lansky, Ganzger, Goeth + Partner 16th November 2023 / 7.30pm Wiener Konzerthaus Mozart-Saal Vienna Timna Brauer, Gesang Marwan Abado, Ud, Gesang Makoto Ozone, Klavier Ory Schneor, Flöte Morphing Chamber Orchestra Tomasz Wabnic, Viola, Künstlerische Leitung" data-de="Musik ist die einzige universelle Sprache, die Gegensätze überwinden kann! „Für uns Musiker ist es nicht nur ein Privileg, sondern auch eine Verantwortung, nicht müde zu werden, die Botschaft von Frieden, Solidarität und dem Bau von Brücken zu verbreiten“, sagt der künstlerische Leiter des Morphing Chamber Orchestra, Tomasz Wabnic. Mit dem Benefizkonzert für mehr Menschlichkeit möchte das Orchester seine Solidarität mit den Opfern von Terror und Krieg in Israel und Palästina zum Ausdruck bringen. Morphing for Humanity, der Wandel zu mehr Menschlichkeit, ist sowohl ein Aufruf als auch ein Programmtitel. Auf Wunsch von Timna Brauer wurde die Besetzung der Solisten durch den palästinensischen Musiker Marwan Abado ergänzt. Nach Deckung der Kosten gehen alle Erlöse an das Rote Kreuz für Nothilfe vor Ort. Wir freuen uns auf Ihren geschätzten Besuch! Besonderer Dank gilt unseren Partnern: David Lansky, Ganzger, Goeth + Partner 16. November 2023 / 19.30 Uhr Wiener Konzerthaus Mozart-Saal Wien Timna Brauer, Gesang Marwan Abado, Ud, Gesang Makoto Ozone, Klavier Ory Schneor, Flöte Morphing Chamber Orchestra Tomasz Wabnic, Viola, Künstlerische Leitung">Music is the only universal language that is able to overcome opposites! “For us musicians, it is not only a privilege, but also a responsibility not to tire of spreading the message of peace, solidarity and building bridges,” says the artistic director of the Morphing Chamber Orchestra, Tomasz Wabnic. With the charity concert for more humanity, the orchestra would like to express its solidarity with the victims of terror and war in Israel and Palestine. Morphing for Humanity, change towards more humanity, is both a call and a program title. At Timna Brauer's request, the line-up of soloists was supplemented by the Palestinian musician Marwan Abado. After costs have been covered, all proceeds go to the Red Cross for emergency aid on site. We look forward to your valued visit! Special thanks to our partners: David Lansky, Ganzger, Goeth + Partner 16th November 2023 / 7.30pm Wiener Konzerthaus Mozart-Saal Vienna Timna Brauer, Gesang Marwan Abado, Ud, Gesang Makoto Ozone, Klavier Ory Schneor, Flöte Morphing Chamber Orchestra Tomasz Wabnic, Viola, Künstlerische Leitung</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Timna Brauer, Gesang</li>
-                            <li>Tomasz Wabnic, artistic director & viola</li>
-                            <li>Marwan Abado, Ud, Gesang</li>
-                            <li>Makoto Ozone, Klavier</li>
-                            <li>Ory Schneor, Flöte</li>
-                            <li>Morphing Chamber Orchestra</li>
+                            <li data-en="Timna Brauer, Gesang" data-de="Timna Brauer, Gesang">Timna Brauer, Gesang</li>
+                            <li data-en="Tomasz Wabnic, artistic director & viola" data-de="Tomasz Wabnic, künstlerischer Leiter & Bratsche">Tomasz Wabnic, artistic director & viola</li>
+                            <li data-en="Marwan Abado, Ud, Gesang" data-de="Marwan Abado, Ud, Gesang">Marwan Abado, Ud, Gesang</li>
+                            <li data-en="Makoto Ozone, Klavier" data-de="Makoto Ozone, Klavier">Makoto Ozone, Klavier</li>
+                            <li data-en="Ory Schneor, Flöte" data-de="Ory Schneor, Flöte">Ory Schneor, Flöte</li>
+                            <li data-en="Morphing Chamber Orchestra" data-de="Morphing Chamber Orchestra">Morphing Chamber Orchestra</li>
                         </ul>
                     </div>
                 </div>
@@ -376,28 +306,18 @@
                         <img src="Images/Davos.png" alt="Davos" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>Opening Concert at World Economic Forum, Davos</h5>
-                        <p>The Annual Meeting's opening concert, entitled "I Sea You", is a powerful cultural statement
-                            of unity and collaboration, and a call to action to world leaders and policy-makers to implement
-                            the appropriate and required agreements to protect and preserve the coral reefs of the Northern
-                            Red Sea. Performed by the Morphing Chamber Orchestra, featuring world-renowned oud virtuoso
-                            Joseph Tawadros and percussionist James Tawadros, "I Sea You" also features exclusive
-                            performances by internationally acclaimed award- winning artists including soprano Fatma Said,
-                            pianist, composer and arranger Tim Allhoff, virtuoso Farah Siraj, guitarist, composer and
-                            producer Andreas Arnold and singer, songwriter Achinoam Nini (Noa), who is joined by her
-                            longstanding musical collaborator Gil Dor. The concert includes a specially created immersive
-                            backdrop featuring footage of the Red Sea corals, filmed by environmentalist and deep-sea diver
-                            Nouf Alosaimi, as well as imagery provided by Coral Morphologic.</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="Opening Concert at World Economic Forum, Davos" data-de="Eröffnungskonzert beim Weltwirtschaftsforum in Davos">Opening Concert at World Economic Forum, Davos</h5>
+                        <p data-en="The Annual Meeting's opening concert, entitled 'I Sea You', is a powerful cultural statement of unity and collaboration, and a call to action to world leaders and policy-makers to implement the appropriate and required agreements to protect and preserve the coral reefs of the Northern Red Sea. Performed by the Morphing Chamber Orchestra, featuring world-renowned oud virtuoso Joseph Tawadros and percussionist James Tawadros, 'I Sea You' also features exclusive performances by internationally acclaimed award- winning artists including soprano Fatma Said, pianist, composer and arranger Tim Allhoff, virtuoso Farah Siraj, guitarist, composer and producer Andreas Arnold and singer, songwriter Achinoam Nini (Noa), who is joined by her longstanding musical collaborator Gil Dor. The concert includes a specially created immersive backdrop featuring footage of the Red Sea corals, filmed by environmentalist and deep-sea diver Nouf Alosaimi, as well as imagery provided by Coral Morphologic." data-de="Das Eröffnungskonzert des Jahrestreffens mit dem Titel 'I Sea You' ist eine kraftvolle kulturelle Aussage von Einheit und Zusammenarbeit und ein Appell an die Weltführer und Entscheidungsträger, die angemessenen und erforderlichen Vereinbarungen zum Schutz und zur Erhaltung der Korallenriffe des Nördlichen Roten Meeres umzusetzen. Aufgeführt vom Morphing Chamber Orchestra, mit dem weltbekannten Oud-Virtuosen Joseph Tawadros und dem Perkussionisten James Tawadros, bietet 'I Sea You' auch exklusive Auftritte international gefeierter preisgekrönter Künstler, darunter die Sopranistin Fatma Said, Pianist, Komponist und Arrangeur Tim Allhoff, Virtuose Farah Siraj, Gitarrist, Komponist und Produzent Andreas Arnold und Sänger, Songwriter Achinoam Nini (Noa), die von ihrem langjährigen musikalischen Mitarbeiter Gil Dor begleitet wird. Das Konzert umfasst ein speziell erstelltes immersives Hintergrundbild mit Aufnahmen der Korallen des Roten Meeres, gefilmt von der Umweltschützerin und Tiefseetaucherin Nouf Alosaimi, sowie Bilder von Coral Morphologic.">The Annual Meeting's opening concert, entitled 'I Sea You', is a powerful cultural statement of unity and collaboration, and a call to action to world leaders and policy-makers to implement the appropriate and required agreements to protect and preserve the coral reefs of the Northern Red Sea. Performed by the Morphing Chamber Orchestra, featuring world-renowned oud virtuoso Joseph Tawadros and percussionist James Tawadros, 'I Sea You' also features exclusive performances by internationally acclaimed award- winning artists including soprano Fatma Said, pianist, composer and arranger Tim Allhoff, virtuoso Farah Siraj, guitarist, composer and producer Andreas Arnold and singer, songwriter Achinoam Nini (Noa), who is joined by her longstanding musical collaborator Gil Dor. The concert includes a specially created immersive backdrop featuring footage of the Red Sea corals, filmed by environmentalist and deep-sea diver Nouf Alosaimi, as well as imagery provided by Coral Morphologic.</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Tomasz Wabnic, artistic director</li>
-                            <li>Yuuki Wong, concertmaster</li>
-                            <li>Alison Lie, violin</li>
-                            <li>Nikita Kuts, violin</li>
-                            <li>Josefina, violin</li>
-                            <li>Morphing Chamber Orchestra</li>
-                            <li>Joseph Tawadros, Oud</li>
-                            <li>Tim Allhof, pianos</li>
+                            <li data-en="Tomasz Wabnic, artistic director" data-de="Tomasz Wabnic, künstlerischer Leiter">Tomasz Wabnic, artistic director</li>
+                            <li data-en="Yuuki Wong, concertmaster" data-de="Yuuki Wong, Konzertmeister">Yuuki Wong, concertmaster</li>
+                            <li data-en="Alison Lie, violin" data-de="Alison Lie, Violine">Alison Lie, violin</li>
+                            <li data-en="Nikita Kuts, violin" data-de="Nikita Kuts, Violine">Nikita Kuts, violin</li>
+                            <li data-en="Josefina, violin" data-de="Josefina, Violine">Josefina, violin</li>
+                            <li data-en="Morphing Chamber Orchestra" data-de="Morphing Chamber Orchestra">Morphing Chamber Orchestra</li>
+                            <li data-en="Joseph Tawadros, Oud" data-de="Joseph Tawadros, Oud">Joseph Tawadros, Oud</li>
+                            <li data-en="Tim Allhof, pianos" data-de="Tim Allhof, Klaviere">Tim Allhof, pianos</li>
                         </ul>
                     </div>
                 </div>
@@ -408,18 +328,18 @@
                         <img src="Images/Morphing_Tokyo.png" alt="Davos" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h5>MORPHING CHAMBER ORCHESTRA at Tokyo Opera City</h5>
-                        <p>Seven concerts at Tokyo Opera City with art. dir. Tomasz Wabnic in December 2022</p>
-                        <h6>Featured Artists</h6>
+                        <h5 data-en="MORPHING CHAMBER ORCHESTRA at Tokyo Opera City" data-de="MORPHING CHAMBER ORCHESTRA in der Tokyo Opera City">MORPHING CHAMBER ORCHESTRA at Tokyo Opera City</h5>
+                        <p data-en="Seven concerts at Tokyo Opera City with art. dir. Tomasz Wabnic in December 2022" data-de="Sieben Konzerte in der Tokyo Opera City mit dem künstlerischen Leiter Tomasz Wabnic im Dezember 2022">Seven concerts at Tokyo Opera City with art. dir. Tomasz Wabnic in December 2022</p>
+                        <h6 data-en="Featured Artists" data-de="Mitwirkende Künstler">Featured Artists</h6>
                         <ul>
-                            <li>Tomasz Wabnic, artistic director</li>
-                            <li>Yuuki Wong, concertmaster</li>
-                            <li>Alison Lie, violin</li>
-                            <li>Nikita Kuts, violin</li>
-                            <li>Josefina, violin</li>
-                            <li>Morphing Chamber Orchestra</li>
-                            <li>Zhangir, violin</li>
-                            <li>Tim Allhof, pianos</li>
+                            <li data-en="Tomasz Wabnic, artistic director" data-de="Tomasz Wabnic, künstlerischer Leiter">Tomasz Wabnic, artistic director</li>
+                            <li data-en="Yuuki Wong, concertmaster" data-de="Yuuki Wong, Konzertmeister">Yuuki Wong, concertmaster</li>
+                            <li data-en="Alison Lie, violin" data-de="Alison Lie, Violine">Alison Lie, violin</li>
+                            <li data-en="Nikita Kuts, violin" data-de="Nikita Kuts, Violine">Nikita Kuts, violin</li>
+                            <li data-en="Josefina, violin" data-de="Josefina, Violine">Josefina, violin</li>
+                            <li data-en="Morphing Chamber Orchestra" data-de="Morphing Chamber Orchestra">Morphing Chamber Orchestra</li>
+                            <li data-en="Zhangir, violin" data-de="Zhangir, Violine">Zhangir, violin</li>
+                            <li data-en="Tim Allhof, pianos" data-de="Tim Allhof, Klaviere">Tim Allhof, pianos</li>
                         </ul>
                     </div>
                 </div>
@@ -438,56 +358,57 @@
 </section>
 
 <section id="images" class="image-gallery">
-    <h2 class="custombold-text" style="margin-bottom: 20px">Images</h2>
+    <h2 class="custombold-text" style="margin-bottom: 20px" data-en="Images" data-de="Bilder">Images</h2>
 
     <!-- Die ersten zwei Bilder -->
     <div class="rowim">
         <div class="image-container">
-            <img src="https://i.imgur.com/HnS0y3t.jpeg" alt="Image: Orchester in church (black/white)" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/HnS0y3t.jpeg" alt="Image: Orchester in church (black/white)" class="image-in-gallery" data-en="Image: Orchester in church (black/white)" data-de="Bild: Orchester in der Kirche (schwarz/weiß)"/>
         </div>
         <div class="image-container">
-            <img src="https://i.imgur.com/T1WZWbE.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/T1WZWbE.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery" data-en="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" data-de="Bild: Yuuki Wong & Tomasz Wabnic, die in der Kirche auftreten (schwarz/weiß)"/>
         </div>
     </div>
 
     <!-- Die nächsten zwei Bilder -->
     <div class="rowim">
         <div class="image-container">
-            <img src="https://i.imgur.com/Qtcrabw.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/Qtcrabw.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery" data-en="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" data-de="Bild: Yuuki Wong & Tomasz Wabnic, die in der Kirche auftreten (schwarz/weiß)"/>
         </div>
         <div class="image-container">
-            <img src="https://i.imgur.com/H0fHiiQ.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery"/>
-        </div>
-    </div>
-
-    <div class="rowim">
-        <div class="image-container">
-            <img src="https://i.imgur.com/xJnazpI.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery"/>
-        </div>
-        <div class="image-container">
-            <img src="https://i.imgur.com/Bv70GGY.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/H0fHiiQ.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery" data-en="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" data-de="Bild: Yuuki Wong & Tomasz Wabnic, die in der Kirche auftreten (schwarz/weiß)"/>
         </div>
     </div>
 
     <div class="rowim">
         <div class="image-container">
-            <img src="https://i.imgur.com/jf5Xzv6.jpeg" alt="Image: 5 musicians performing" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/xJnazpI.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery" data-en="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" data-de="Bild: Yuuki Wong & Tomasz Wabnic, die in der Kirche auftreten (schwarz/weiß)"/>
         </div>
         <div class="image-container">
-            <img src="https://i.imgur.com/eRDJi8r.jpeg" alt="Image: Morphing performing in church" class="image-in-gallery"/>
+            <img src="https://i.imgur.com/Bv70GGY.jpeg" alt="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" class="image-in-gallery" data-en="Image: Yuuki Wong & Tomasz Wabnic performing in church (black/white)" data-de="Bild: Yuuki Wong & Tomasz Wabnic, die in der Kirche auftreten (schwarz/weiß)"/>
+        </div>
+    </div>
+
+    <div class="rowim">
+        <div class="image-container">
+            <img src="https://i.imgur.com/jf5Xzv6.jpeg" alt="Image: 5 musicians performing" class="image-in-gallery" data-en="Image: 5 musicians performing" data-de="Bild: 5 Musiker auftreten"/>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/eRDJi8r.jpeg" alt="Image: Morphing performing in church" class="image-in-gallery" data-en="Image: Morphing performing in church" data-de="Bild: Morphing tritt in der Kirche auf"/>
         </div>
     </div>
     <!-- Ende der Bilder -->
 
     <div>
-        <a href="Images.html" class="gallery-button">See Full Gallery 🤍</a>
+        <a href="Images.html" class="gallery-button" data-en="See Full Gallery 🤍" data-de="Siehe gesamte Galerie 🤍">See Full Gallery 🤍</a>
     </div>
 </section>
 
 
+
 <section id="videos" class="py-5 text-center">
     <div class="container">
-        <h2 class="section-title-videos mb-4">Our Videos</h2>
+        <h2 class="section-title-videos mb-4" data-en="Our Videos" data-de="Unsere Videos">Our Videos</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="video-thumbnail">
@@ -496,7 +417,7 @@
                         <div class="play-button"><i class="fas fa-play-circle"></i></div>
                     </a>
                 </div>
-                <p class="mt-2 text-white">Eroica Hall</p>
+                <p class="mt-2 text-white" data-en="Eroica Hall" data-de="Eroica Halle">Eroica Hall</p>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="video-thumbnail">
@@ -505,7 +426,7 @@
                         <div class="play-button"><i class="fas fa-play-circle"></i></div>
                     </a>
                 </div>
-                <p class="mt-2 text-white">Arvo Pärt, Fratres</p>
+                <p class="mt-2 text-white" data-en="Arvo Pärt, Fratres" data-de="Arvo Pärt, Fratres">Arvo Pärt, Fratres</p>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="video-thumbnail">
@@ -514,10 +435,10 @@
                         <div class="play-button"><i class="fas fa-play-circle"></i></div>
                     </a>
                 </div>
-                <p class="mt-2 text-white">Tawadros / Sokolov / MCO</p>
+                <p class="mt-2 text-white" data-en="Tawadros / Sokolov / MCO" data-de="Tawadros / Sokolov / MCO">Tawadros / Sokolov / MCO</p>
             </div>
         </div>
-        <a href="https://www.youtube.com/channel/yourchannel" target="_blank" class="btn btn-primary mt-4">Watch more of our Videos</a>
+        <a href="https://www.youtube.com/channel/yourchannel" target="_blank" class="btn btn-primary mt-4" data-en="Watch more of our Videos" data-de="Sehen Sie mehr unserer Videos">Watch more of our Videos</a>
     </div>
 </section>
 
@@ -525,15 +446,13 @@
 
 
 
+
 <section id="about" class="about-section">
-    <h2 class="section-title">About Us</h2>
+    <h2 class="section-title" data-en="About Us" data-de="Über uns">About Us</h2>
     <div class="about-container">
         <div class="about-item">
-            <h3 class="about-subtitle">Who We Are</h3>
-            <p class="about-text">
-                Founded in 2006 by artistic director Tomasz Wabnic- violinist, violist, as well as arranger - Morphing Chamber Orchestra has stayed true to the philosophy of ensemble playing. Its players are young, diverse, and award-winning artists from around the world, who all came to Vienna to perfect their musical skills. Their alert playing and outstanding qualities are paired with an acute sense of style which enables them to excel at a range of genres.<br><br>
-                The Metropolitan Opera, Tokyo Opera City Concert Hall, music labels Aparté & Sony Classical and the World Economic Forum: these are just a few of the important institutions that put their trust in the MCO. Whether it's a concert, a recording or a major ceremony, the MCO is a first-class chamber music partner for any occasion. Opera stars Aleksandra Kurzak, Roberto Alagna and Andreas Scholl, American jazz icon Bobby McFerrin and composer Arvo Pärt have also opted for the cosmopolitan Vienna-based ensemble.
-            </p>
+            <h3 class="about-subtitle" data-en="Who We Are" data-de="Wer wir sind">Who We Are</h3>
+            <p class="about-text" data-en="Founded in 2006 by artistic director Tomasz Wabnic- violinist, violist, as well as arranger - Morphing Chamber Orchestra has stayed true to the philosophy of ensemble playing. Its players are young, diverse, and award-winning artists from around the world, who all came to Vienna to perfect their musical skills. Their alert playing and outstanding qualities are paired with an acute sense of style which enables them to excel at a range of genres. The Metropolitan Opera, Tokyo Opera City Concert Hall, music labels Aparté & Sony Classical and the World Economic Forum: these are just a few of the important institutions that put their trust in the MCO. Whether it's a concert, a recording or a major ceremony, the MCO is a first-class chamber music partner for any occasion. Opera stars Aleksandra Kurzak, Roberto Alagna and Andreas Scholl, American jazz icon Bobby McFerrin and composer Arvo Pärt have also opted for the cosmopolitan Vienna-based ensemble." data-de="Gegründet im Jahr 2006 vom künstlerischen Leiter Tomasz Wabnic – Geiger, Bratschist sowie Arrangeur – bleibt das Morphing Chamber Orchestra der Philosophie des Ensemble-Spiels treu. Seine Spieler sind junge, vielfältige und preisgekrönte Künstler aus aller Welt, die alle nach Wien kamen, um ihre musikalischen Fähigkeiten zu perfektionieren. Ihr waches Spiel und ihre herausragenden Qualitäten sind gepaart mit einem ausgeprägten Stilbewusstsein, das es ihnen ermöglicht, in einer Vielzahl von Genres zu glänzen. Die Metropolitan Opera, die Tokyo Opera City Concert Hall, die Musiklabels Aparté & Sony Classical und das Weltwirtschaftsforum: dies sind nur einige der wichtigen Institutionen, die dem MCO ihr Vertrauen schenken. Ob Konzert, Aufnahme oder große Zeremonie, das MCO ist ein erstklassiger Kammermusikpartner für jeden Anlass. Opernstars wie Aleksandra Kurzak, Roberto Alagna und Andreas Scholl, die amerikanische Jazz-Ikone Bobby McFerrin und der Komponist Arvo Pärt haben sich ebenfalls für das kosmopolitische Wiener Ensemble entschieden.">Founded in 2006 by artistic director Tomasz Wabnic- violinist, violist, as well as arranger - Morphing Chamber Orchestra has stayed true to the philosophy of ensemble playing. Its players are young, diverse, and award-winning artists from around the world, who all came to Vienna to perfect their musical skills. Their alert playing and outstanding qualities are paired with an acute sense of style which enables them to excel at a range of genres. The Metropolitan Opera, Tokyo Opera City Concert Hall, music labels Aparté & Sony Classical and the World Economic Forum: these are just a few of the important institutions that put their trust in the MCO. Whether it's a concert, a recording or a major ceremony, the MCO is a first-class chamber music partner for any occasion. Opera stars Aleksandra Kurzak, Roberto Alagna and Andreas Scholl, American jazz icon Bobby McFerrin and composer Arvo Pärt have also opted for the cosmopolitan Vienna-based ensemble.</p>
             <blockquote class="about-quote">
                 "Vienna Morphing Orchestra is a small orchestra with a big spirit. They were great to work with."
                 <span class="quote-author">Bobby McFerrin</span>
@@ -541,10 +460,8 @@
         </div>
 
         <div class="about-item">
-            <h3 class="about-subtitle">Achievements</h3>
-            <p class="about-text">
-                The ensemble’s artistic achievements have been recognized by no less than four nominations for the OPUS Klassik Award 2023 with the album Stabat Mater, featuring works by Arvo Pärt. Nominations have been announced in the categories of “orchestra of the year” & “opera recording of the year”, furthermore Tomasz Wabnic has been nominated for “conductor of the year” and Andreas Scholl as “vocalist of the year”.
-            </p>
+            <h3 class="about-subtitle" data-en="Achievements" data-de="Erfolge">Achievements</h3>
+            <p class="about-text" data-en="The ensemble’s artistic achievements have been recognized by no less than four nominations for the OPUS Klassik Award 2023 with the album Stabat Mater, featuring works by Arvo Pärt. Nominations have been announced in the categories of “orchestra of the year” & “opera recording of the year”, furthermore Tomasz Wabnic has been nominated for “conductor of the year” and Andreas Scholl as “vocalist of the year”." data-de="Die künstlerischen Leistungen des Ensembles wurden mit nicht weniger als vier Nominierungen für den OPUS Klassik Award 2023 mit dem Album Stabat Mater, das Werke von Arvo Pärt enthält, anerkannt. Nominierungen wurden in den Kategorien „Orchester des Jahres“ und „Opernaufnahme des Jahres“ bekannt gegeben, außerdem wurde Tomasz Wabnic als „Dirigent des Jahres“ und Andreas Scholl als „Sänger des Jahres“ nominiert.">The ensemble’s artistic achievements have been recognized by no less than four nominations for the OPUS Klassik Award 2023 with the album Stabat Mater, featuring works by Arvo Pärt. Nominations have been announced in the categories of “orchestra of the year” & “opera recording of the year”, furthermore Tomasz Wabnic has been nominated for “conductor of the year” and Andreas Scholl as “vocalist of the year”.</p>
             <blockquote class="about-quote">
                 „Arvo Pärt very much appreciated both your interpretation and the presentation of his Oeuvre – „Vater unser“. He sends his congratulations. ...your musicians rendered the spirit of the work wonderfully. Arvo Pärt sends his thanks for your engagement!“
                 <span class="quote-author">Jane Doe</span>
@@ -552,11 +469,8 @@
         </div>
 
         <div class="about-item">
-            <h3 class="about-subtitle">Releases</h3>
-            <p class="about-text">
-                Tomasz Wabnic and the MCO have their finger on the pulse with their latest releases. 2019 saw the launch of their debut album with Sony: "Desire”, featuring the stratospheric voice of Polish soprano Aleksandra Kurzak, which received critical acclaim and was named "Best Foreign Album" at the Fryderyk Awards in Poland in 2021. Kurzak's next album, "Mozart Concertante", features an unusual mix of arias as well as Mozart's Sinfonia Concertante with soloists Tomasz Wabnic and Yuuki Wong - an example of the MCO style of soloist-led music-making. "Stabat Mater" is dedicated to the works of the famous contemporary composer Arvo Pärt and impresses with singers Aleksandra Kurzak, Roberto Alagna and countertenor Andreas Scholl. "De Profundis" is a spiritual journey through the works of Bach and Schönberg. Further albums with Aleksandra Kurzak, Roberto Alagna as well as Barno Ismatullaeva and Kévin Amiel are in the making.<br><br>
-                MCO has made recordings for various television stations (PBS TV, ORF, TVP Kultura, ARTE TV, MEZZO TV) and radio stations (OE1, radio klassik Stephansdom, Radio Classique France and Polish Radio 2). Morphing Chamber Orchestra is a partner of the Parisian label Aparté (Artistic Director: Nicolas Bartholomeé).
-            </p>
+            <h3 class="about-subtitle" data-en="Releases" data-de="Veröffentlichungen">Releases</h3>
+            <p class="about-text" data-en="Tomasz Wabnic and the MCO have their finger on the pulse with their latest releases. 2019 saw the launch of their debut album with Sony: 'Desire', featuring the stratospheric voice of Polish soprano Aleksandra Kurzak, which received critical acclaim and was named 'Best Foreign Album' at the Fryderyk Awards in Poland in 2021. Kurzak's next album, 'Mozart Concertante', features an unusual mix of arias as well as Mozart's Sinfonia Concertante with soloists Tomasz Wabnic and Yuuki Wong - an example of the MCO style of soloist-led music-making. 'Stabat Mater' is dedicated to the works of the famous contemporary composer Arvo Pärt and impresses with singers Aleksandra Kurzak, Roberto Alagna and countertenor Andreas Scholl. 'De Profundis' is a spiritual journey through the works of Bach and Schönberg. Further albums with Aleksandra Kurzak, Roberto Alagna as well as Barno Ismatullaeva and Kévin Amiel are in the making. MCO has made recordings for various television stations (PBS TV, ORF, TVP Kultura, ARTE TV, MEZZO TV) and radio stations (OE1, radio klassik Stephansdom, Radio Classique France and Polish Radio 2). Morphing Chamber Orchestra is a partner of the Parisian label Aparté (Artistic Director: Nicolas Bartholomeé)." data-de="Tomasz Wabnic und das MCO sind mit ihren neuesten Veröffentlichungen am Puls der Zeit. 2019 erschien ihr Debütalbum bei Sony: 'Desire', mit der stratosphärischen Stimme der polnischen Sopranistin Aleksandra Kurzak, das von der Kritik gefeiert und 2021 bei den Fryderyk Awards in Polen als 'Bestes Ausländisches Album' ausgezeichnet wurde. Kurzaks nächstes Album, 'Mozart Concertante', bietet eine ungewöhnliche Mischung aus Arien sowie Mozarts Sinfonia Concertante mit den Solisten Tomasz Wabnic und Yuuki Wong - ein Beispiel für den solistenorientierten Musikstil des MCO. 'Stabat Mater' ist den Werken des berühmten zeitgenössischen Komponisten Arvo Pärt gewidmet und beeindruckt mit den Sängern Aleksandra Kurzak, Roberto Alagna und dem Countertenor Andreas Scholl. 'De Profundis' ist eine spirituelle Reise durch die Werke von Bach und Schönberg. Weitere Alben mit Aleksandra Kurzak, Roberto Alagna sowie Barno Ismatullaeva und Kévin Amiel sind in Arbeit. Das MCO hat Aufnahmen für verschiedene Fernsehsender (PBS TV, ORF, TVP Kultura, ARTE TV, MEZZO TV) und Radiosender (OE1, radio klassik Stephansdom, Radio Classique France und Polskie Radio 2) gemacht. Morphing Chamber Orchestra ist Partner des Pariser Labels Aparté (Künstlerischer Leiter: Nicolas Bartholomeé).">Tomasz Wabnic and the MCO have their finger on the pulse with their latest releases. 2019 saw the launch of their debut album with Sony: 'Desire', featuring the stratospheric voice of Polish soprano Aleksandra Kurzak, which received critical acclaim and was named 'Best Foreign Album' at the Fryderyk Awards in Poland in 2021. Kurzak's next album, 'Mozart Concertante', features an unusual mix of arias as well as Mozart's Sinfonia Concertante with soloists Tomasz Wabnic and Yuuki Wong - an example of the MCO style of soloist-led music-making. 'Stabat Mater' is dedicated to the works of the famous contemporary composer Arvo Pärt and impresses with singers Aleksandra Kurzak, Roberto Alagna and countertenor Andreas Scholl. 'De Profundis' is a spiritual journey through the works of Bach and Schönberg. Further albums with Aleksandra Kurzak, Roberto Alagna as well as Barno Ismatullaeva and Kévin Amiel are in the making. MCO has made recordings for various television stations (PBS TV, ORF, TVP Kultura, ARTE TV, MEZZO TV) and radio stations (OE1, radio klassik Stephansdom, Radio Classique France and Polish Radio 2). Morphing Chamber Orchestra is a partner of the Parisian label Aparté (Artistic Director: Nicolas Bartholomeé).</p>
             <blockquote class="about-quote">
                 „Music is like a language: if you have enough love for music, you can play anything. Then style or genre is just a matter of dialect."
                 <span class="quote-author">Artistic Director Tomasz Wabnic</span>
@@ -580,45 +494,14 @@
             </div>
             <div class="col-md-8">
                 <div class="tomasz-biography">
-                    <p>Tomasz Wabnic is the founder and artistic director of the Morphing Chamber Orchestra and violist of
-                        the Morphing String Quartet in Vienna and of the Huberman String Trio. Leading peer musicians and
-                        audiences around the world are amazed by the bold energy and inventive drive of this multi-faceted
-                        artist. The 2020/21 season sees Tomasz Wabnic invited to perform in more than a hundred of the
-                        world's leading venues, from New York's Carnegie Hall and Teatro alla Scala to the Golden Hall
-                        of the Vienna Musikverein.</p>
-                    <p>During the summer of 2020 he performed, together with Roberto Alagna and Alexandra Kurzak, in the
-                        Metropolitan Opera Stars Live in Concert series. Recent appearances by Tomasz Wabnic also include
-                        performances at the Amsterdam Concertgebouw, Moscow's Philharmonic Hall, the Tchaikovsky Hall of
-                        the Moscow Conservatory, the legendary Teatro Amazonas in Manaus, Brazil, and the amazing Tokyo
-                        Opera City Concert Hall. Founded by Tomas Wabnic in Vienna in 2006, the Morphing Chamber Orchestra
-                        has quickly established itself as one of the most sought-after soloist ensembles at international
-                        level. The orchestra, composed of fixed members all of whom are award-winning soloists from fifteen
-                        countries, has its resident series at the famous Eroica Hall of Vienna's Lobkowitz Palace has recorded
-                        widely for SONY Classical, BMG Classics, and Universal Music. Following his concept of a congenial
-                        combination of musical styles and art forms in an unusually intense rehearsal process, Tomasz Wabnic
-                        established close musical partnerships with other extraordinary artists as diverse as star soprano Alexandra
-                        Kurzak, US vocal artist Bobby McFerrin, counter-tenor legend Andreas Scholl, Canadian jazz singer Sarah Reid,
-                        the Egyptian-Australian oud virtuoso Joseph Tawadros and major composers such as Arvo Pärt and Krzysztof Penderecki.</p>
+                    <p data-en="Tomasz Wabnic is the founder and artistic director of the Morphing Chamber Orchestra and violist of the Morphing String Quartet in Vienna and of the Huberman String Trio. Leading peer musicians and audiences around the world are amazed by the bold energy and inventive drive of this multi-faceted artist. The 2020/21 season sees Tomasz Wabnic invited to perform in more than a hundred of the world's leading venues, from New York's Carnegie Hall and Teatro alla Scala to the Golden Hall of the Vienna Musikverein." data-de="Tomasz Wabnic ist der Gründer und künstlerische Leiter des Morphing Chamber Orchestra und Bratschist des Morphing String Quartet in Wien und des Huberman String Trio. Führende Musiker und Publikum auf der ganzen Welt sind von der kühnen Energie und dem erfinderischen Antrieb dieses vielseitigen Künstlers begeistert. Die Saison 2020/21 sieht Tomasz Wabnic eingeladen, in mehr als hundert der weltweit führenden Veranstaltungsorte aufzutreten, von der Carnegie Hall in New York und dem Teatro alla Scala bis zum Goldenen Saal des Wiener Musikvereins.">Tomasz Wabnic is the founder and artistic director of the Morphing Chamber Orchestra and violist of the Morphing String Quartet in Vienna and of the Huberman String Trio. Leading peer musicians and audiences around the world are amazed by the bold energy and inventive drive of this multi-faceted artist. The 2020/21 season sees Tomasz Wabnic invited to perform in more than a hundred of the world's leading venues, from New York's Carnegie Hall and Teatro alla Scala to the Golden Hall of the Vienna Musikverein.</p>
+
+                    <p data-en="During the summer of 2020 he performed, together with Roberto Alagna and Alexandra Kurzak, in the Metropolitan Opera Stars Live in Concert series. Recent appearances by Tomasz Wabnic also include performances at the Amsterdam Concertgebouw, Moscow's Philharmonic Hall, the Tchaikovsky Hall of the Moscow Conservatory, the legendary Teatro Amazonas in Manaus, Brazil, and the amazing Tokyo Opera City Concert Hall. Founded by Tomas Wabnic in Vienna in 2006, the Morphing Chamber Orchestra has quickly established itself as one of the most sought-after soloist ensembles at international level. The orchestra, composed of fixed members all of whom are award-winning soloists from fifteen countries, has its resident series at the famous Eroica Hall of Vienna's Lobkowitz Palace has recorded widely for SONY Classical, BMG Classics, and Universal Music. Following his concept of a congenial combination of musical styles and art forms in an unusually intense rehearsal process, Tomasz Wabnic established close musical partnerships with other extraordinary artists as diverse as star soprano Alexandra Kurzak, US vocal artist Bobby McFerrin, counter-tenor legend Andreas Scholl, Canadian jazz singer Sarah Reid, the Egyptian-Australian oud virtuoso Joseph Tawadros and major composers such as Arvo Pärt and Krzysztof Penderecki." data-de="Im Sommer 2020 trat er zusammen mit Roberto Alagna und Alexandra Kurzak in der Metropolitan Opera Stars Live in Concert-Reihe auf. Zu den jüngsten Auftritten von Tomasz Wabnic gehören auch Aufführungen im Amsterdamer Concertgebouw, im Moskauer Philharmonischen Saal, im Tschaikowsky-Saal des Moskauer Konservatoriums, im legendären Teatro Amazonas in Manaus, Brasilien, und in der beeindruckenden Tokyo Opera City Concert Hall. Das 2006 von Tomas Wabnic in Wien gegründete Morphing Chamber Orchestra hat sich schnell als eines der gefragtesten Solistenensembles auf internationaler Ebene etabliert. Das Orchester, bestehend aus festen Mitgliedern, die alle preisgekrönte Solisten aus fünfzehn Ländern sind, hat seine Residenzserie im berühmten Eroica-Saal des Wiener Palais Lobkowitz und hat für SONY Classical, BMG Classics und Universal Music aufgenommen. Nach seinem Konzept einer congenialen Kombination von Musikstilen und Kunstformen in einem ungewöhnlich intensiven Probenprozess hat Tomasz Wabnic enge musikalische Partnerschaften mit anderen außergewöhnlichen Künstlern wie der Starsopranistin Alexandra Kurzak, dem US-Gesangskünstler Bobby McFerrin, dem Countertenor Andreas Scholl, der kanadischen Jazzsängerin Sarah Reid, dem ägyptisch-australischen Oud-Virtuosen Joseph Tawadros und bedeutenden Komponisten wie Arvo Pärt und Krzysztof Penderecki etabliert.">During the summer of 2020 he performed, together with Roberto Alagna and Alexandra Kurzak, in the Metropolitan Opera Stars Live in Concert series. Recent appearances by Tomasz Wabnic also include performances at the Amsterdam Concertgebouw, Moscow's Philharmonic Hall, the Tchaikovsky Hall of the Moscow Conservatory, the legendary Teatro Amazonas in Manaus, Brazil, and the amazing Tokyo Opera City Concert Hall. Founded by Tomas Wabnic in Vienna in 2006, the Morphing Chamber Orchestra has quickly established itself as one of the most sought-after soloist ensembles at international level. The orchestra, composed of fixed members all of whom are award-winning soloists from fifteen countries, has its resident series at the famous Eroica Hall of Vienna's Lobkowitz Palace has recorded widely for SONY Classical, BMG Classics, and Universal Music. Following his concept of a congenial combination of musical styles and art forms in an unusually intense rehearsal process, Tomasz Wabnic established close musical partnerships with other extraordinary artists as diverse as star soprano Alexandra Kurzak, US vocal artist Bobby McFerrin, counter-tenor legend Andreas Scholl, Canadian jazz singer Sarah Reid, the Egyptian-Australian oud virtuoso Joseph Tawadros and major composers such as Arvo Pärt and Krzysztof Penderecki.</p>
+
                     <button id="readMoreBtn" class="read-more-btn">Read More</button>
                     <div id="moreText" class="more-text">
-                        <p>Tomasz Wabnic is also the founder of Capella Czestochoviensis and served as its artistic director from 2006 to 2012.
-                            Now the artistic director of Capella Claromontana since 2012, he leads another world-class, Early Music ensemble
-                            dedicated at unearthing lost music especially of the Polish Baroque era. Mr. Wabnic produced world- premiere
-                            recordings of several works by Daubeck and Gotschalk. The previously lost gems rediscovered by Tomasz Wabnic
-                            at the music archives of the Częstochowa monastery of Mons Clara include several works by W.A. Mozart and
-                            Joseph Haydn. In 2013 Tomasz Wabnic, together with brothers Sándor and Ádám Jávorkai, founded the Huberman
-                            String Trio. The Trio presented its critically acclaimed recording of J.S. Bach's Goldberg Variations
-                            (arr. Dmitri Sitkovetsky) in 2016. Recent appearances of Mr. Wabnic with the Huberman Trio included performances
-                            at the Rheingau Musik Festival and at NOSPR Hall in Katowice. Born in Wrocław, Poland, into a family of musicians,
-                            Tomasz Wabnic received his education as a violinist and a violist at the conservatories and universities of Bydgoszcz
-                            and Poznan in the violin class of the internationally famed violinist Jadwiga Kaliszewska as well as at Vienna's Musik
-                            und Kunst Privatuniversität as a member of the highly regarded viola class of Herwig Zelle and of the chamber music
-                            masterclass of the Altenberg Trio Wien. He graduated with honours. Numerous awards and honours were bestowed on Tomasz Wabnic
-                            as a soloist and chamber musician. With his Fidelio Quartet, he was a finalist in the 2001 International Chamber Music
-                            Competition in Melbourne. Morphing: the combination of several works of music and other art forms through seamless
-                            tranisition, is a concept which fascinated Tomasz Wabnic since his infant days: In his parents' living room, he used
-                            to play two or three records and the radio all at the same time, with the idea of creating a new sound. Today he lives
-                            with his family in Vienna.</p>
+                        <p data-en="Tomasz Wabnic is also the founder of Capella Czestochoviensis and served as its artistic director from 2006 to 2012. Now the artistic director of Capella Claromontana since 2012, he leads another world-class, Early Music ensemble dedicated at unearthing lost music especially of the Polish Baroque era. Mr. Wabnic produced world- premiere recordings of several works by Daubeck and Gotschalk. The previously lost gems rediscovered by Tomasz Wabnic at the music archives of the Częstochowa monastery of Mons Clara include several works by W.A. Mozart and Joseph Haydn. In 2013 Tomasz Wabnic, together with brothers Sándor and Ádám Jávorkai, founded the Huberman String Trio. The Trio presented its critically acclaimed recording of J.S. Bach's Goldberg Variations (arr. Dmitri Sitkovetsky) in 2016. Recent appearances of Mr. Wabnic with the Huberman Trio included performances at the Rheingau Musik Festival and at NOSPR Hall in Katowice. Born in Wrocław, Poland, into a family of musicians, Tomasz Wabnic received his education as a violinist and a violist at the conservatories and universities of Bydgoszcz and Poznan in the violin class of the internationally famed violinist Jadwiga Kaliszewska as well as at Vienna's Musik und Kunst Privatuniversität as a member of the highly regarded viola class of Herwig Zelle and of the chamber music masterclass of the Altenberg Trio Wien. He graduated with honours. Numerous awards and honours were bestowed on Tomasz Wabnic as a soloist and chamber musician. With his Fidelio Quartet, he was a finalist in the 2001 International Chamber Music Competition in Melbourne. Morphing: the combination of several works of music and other art forms through seamless transition, is a concept which fascinated Tomasz Wabnic since his infant days: In his parents' living room, he used to play two or three records and the radio all at the same time, with the idea of creating a new sound. Today he lives with his family in Vienna." data-de="Tomasz Wabnic ist auch der Gründer von Capella Czestochoviensis und war von 2006 bis 2012 deren künstlerischer Leiter. Seit 2012 ist er künstlerischer Leiter der Capella Claromontana, einem weiteren weltklasse Ensemble für Alte Musik, das sich der Wiederentdeckung verlorener Musik, insbesondere der polnischen Barockmusik, widmet. Herr Wabnic produzierte Weltpremieren-Aufnahmen mehrerer Werke von Daubeck und Gotschalk. Zu den von Tomasz Wabnic in den Musikarchiven des Klosters Częstochowa von Mons Clara wiederentdeckten, zuvor verloren geglaubten Schätzen gehören mehrere Werke von W.A. Mozart und Joseph Haydn. 2013 gründete Tomasz Wabnic zusammen mit den Brüdern Sándor und Ádám Jávorkai das Huberman String Trio. Das Trio präsentierte 2016 seine vielgelobte Aufnahme von J.S. Bachs Goldberg-Variationen (arr. Dmitri Sitkovetsky). Zu den jüngsten Auftritten von Herrn Wabnic mit dem Huberman Trio gehören Aufführungen beim Rheingau Musik Festival und im NOSPR-Saal in Katowice. Tomasz Wabnic wurde in Wrocław, Polen, in eine Musikerfamilie hineingeboren und erhielt seine Ausbildung als Geiger und Bratschist an den Konservatorien und Universitäten von Bydgoszcz und Poznań in der Geigenklasse der international berühmten Geigerin Jadwiga Kaliszewska sowie an der Wiener Musik und Kunst Privatuniversität als Mitglied der hoch angesehenen Bratschenklasse von Herwig Zelle und der Kammermusikmeisterklasse des Altenberg Trios Wien. Er schloss sein Studium mit Auszeichnung ab. Zahlreiche Auszeichnungen und Ehrungen wurden Tomasz Wabnic als Solist und Kammermusiker zuteil. Mit seinem Fidelio Quartett war er Finalist beim Internationalen Kammermusikwettbewerb 2001 in Melbourne. Morphing: die Kombination mehrerer Musikwerke und anderer Kunstformen durch nahtlosen Übergang, ist ein Konzept, das Tomasz Wabnic seit seinen Kindertagen fasziniert: Im Wohnzimmer seiner Eltern spielte er gleichzeitig zwei oder drei Schallplatten und das Radio ab, um eine neue Klanglandschaft zu schaffen. Heute lebt er mit seiner Familie in Wien.">Tomasz Wabnic is also the founder of Capella Czestochoviensis and served as its artistic director from 2006 to 2012. Now the artistic director of Capella Claromontana since 2012, he leads another world-class, Early Music ensemble dedicated at unearthing lost music especially of the Polish Baroque era. Mr. Wabnic produced world- premiere recordings of several works by Daubeck and Gotschalk. The previously lost gems rediscovered by Tomasz Wabnic at the music archives of the Częstochowa monastery of Mons Clara include several works by W.A. Mozart and Joseph Haydn. In 2013 Tomasz Wabnic, together with brothers Sándor and Ádám Jávorkai, founded the Huberman String Trio. The Trio presented its critically acclaimed recording of J.S. Bach's Goldberg Variations (arr. Dmitri Sitkovetsky) in 2016. Recent appearances of Mr. Wabnic with the Huberman Trio included performances at the Rheingau Musik Festival and at NOSPR Hall in Katowice. Born in Wrocław, Poland, into a family of musicians, Tomasz Wabnic received his education as a violinist and a violist at the conservatories and universities of Bydgoszcz and Poznan in the violin class of the internationally famed violinist Jadwiga Kaliszewska as well as at Vienna's Musik und Kunst Privatuniversität as a member of the highly regarded viola class of Herwig Zelle and of the chamber music masterclass of the Altenberg Trio Wien. He graduated with honours. Numerous awards and honours were bestowed on Tomasz Wabnic as a soloist and chamber musician. With his Fidelio Quartet, he was a finalist in the 2001 International Chamber Music Competition in Melbourne. Morphing: the combination of several works of music and other art forms through seamless transition, is a concept which fascinated Tomasz Wabnic since his infant days: In his parents' living room, he used to play two or three records and the radio all at the same time, with the idea of creating a new sound. Today he lives with his family in Vienna.</p>
+
                     </div>
                 </div>
             </div>
@@ -628,7 +511,7 @@
 
 <!-- Concerts and Tickets Section -->
 <section id="concertsandtickets" class="calendar">
-    <h2>Concerts & Tickets</h2>
+    <h2 data-en="Concerts & Tickets" data-de="Konzerte & Tickets">Concerts & Tickets</h2>
     <div class="calendar-wrapper">
         <div class="calendar-box">
             <div class="month customreg-text">
@@ -641,7 +524,7 @@
             </div>
         </div>
         <div class="concert-list">
-            <h3>Upcoming Concerts</h3>
+            <h3 data-en="Upcoming Concerts" data-de="Kommende Konzerte">Upcoming Concerts</h3>
             <ul id="concerts-list">
                 <!-- Concerts will be populated here dynamically -->
             </ul>
@@ -650,7 +533,7 @@
 </section>
 
 <section id="our-team" class="team-section">
-    <h2 class="team-title">Our Team</h2>
+    <h2 class="team-title">Team</h2>
     <div class="team-container">
         <div class="team-grid">
             <div class="team-member highlight" data-aos="fade-up">
@@ -661,7 +544,7 @@
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">Tomasz Wabnic</h3>
-                    <p class="member-title">Artistic Director</p>
+                    <p class="member-title" data-en="Artistic Director" data-de="Künstlerischer Leiter">Artistic Director</p>
                 </div>
             </div>
 
@@ -671,7 +554,7 @@
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">Yuuki Wong</h3>
-                    <p class="member-title">Concertmaster</p>
+                    <p class="member-title" data-en="Concertmaster" data-de="Konzertmeister">Concertmaster</p>
                 </div>
             </div>
 
@@ -681,7 +564,7 @@
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">Alison Lie</h3>
-                    <p class="member-title">Musician / Personal Assistant</p>
+                    <p class="member-title" data-en="Musician / Personal Assistant" data-de="Musikerin / Persönliche Assistentin">Musician / Personal Assistant</p>
                 </div>
             </div>
 
@@ -691,7 +574,7 @@
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">Lukas Medlam</h3>
-                    <p class="member-title">Musician / Management</p>
+                    <p class="member-title" data-en="Musician / Management" data-de="Musiker / Management">Musician / Management</p>
                 </div>
             </div>
 
@@ -701,7 +584,7 @@
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">Nichita Pavliuc</h3>
-                    <p class="member-title">Web Developer</p>
+                    <p class="member-title" data-en="Web Developer" data-de="Webentwickler">Web Developer</p>
                 </div>
             </div>
 
@@ -711,7 +594,7 @@
 
 
 <section id="musicians" class="team-section">
-    <h2 class="team-title">Our Musicians</h2>
+    <h2 class="team-title" data-en="Musicians" data-de="Musiker">Musicians</h2>
     <div class="team-container">
         <div class="team-grid">
             <div class="team-member highlight" data-aos="fade-up">
@@ -721,8 +604,8 @@
                     </a>
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Tomasz Wabnic</h3>
-                    <p class="member-title">Artistic Director</p>
+                    <h3 class="member-name" data-en="Tomasz Wabnic" data-de="Tomasz Wabnic">Tomasz Wabnic</h3>
+                    <p class="member-title" data-en="Artistic Director" data-de="Künstlerischer Leiter">Artistic Director</p>
                 </div>
             </div>
 
@@ -731,8 +614,8 @@
                     <img src="Images/Yuuki_Wong_1.png" alt="Yuuki Wong">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Yuuki Wong</h3>
-                    <p class="member-title">Concertmaster</p>
+                    <h3 class="member-name" data-en="Yuuki Wong" data-de="Yuuki Wong">Yuuki Wong</h3>
+                    <p class="member-title" data-en="Concertmaster" data-de="Konzertmeister">Concertmaster</p>
                 </div>
             </div>
 
@@ -741,8 +624,8 @@
                     <img src="Images/Alison_Lie.jpg" alt="Alison Lie">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Alison Lie</h3>
-                    <p class="member-title">Musician / Personal Assistant</p>
+                    <h3 class="member-name" data-en="Alison Lie" data-de="Alison Lie">Alison Lie</h3>
+                    <p class="member-title" data-en="Musician / Personal Assistant" data-de="Musikerin / Persönliche Assistentin">Musician / Personal Assistant</p>
                 </div>
             </div>
 
@@ -751,8 +634,8 @@
                     <img src="Images/Lukas_Medlam.png" alt="Lukas Medlam">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Lukas Medlam</h3>
-                    <p class="member-title">Musician / Management</p>
+                    <h3 class="member-name" data-en="Lukas Medlam" data-de="Lukas Medlam">Lukas Medlam</h3>
+                    <p class="member-title" data-en="Musician / Management" data-de="Musiker / Management">Musician / Management</p>
                 </div>
             </div>
 
@@ -761,8 +644,8 @@
                     <img src="Images/Nikita_Kuts.jpg" alt="Josefina">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Nikita Kuts</h3>
-                    <p class="member-title">Musician</p>
+                    <h3 class="member-name" data-en="Nikita Kuts" data-de="Nikita Kuts">Nikita Kuts</h3>
+                    <p class="member-title" data-en="Musician" data-de="Musiker">Musician</p>
                 </div>
             </div>
 
@@ -771,8 +654,8 @@
                     <img src="Images/Josefina.jpg" alt="Josefina">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Josefina Alcaide</h3>
-                    <p class="member-title">Musician</p>
+                    <h3 class="member-name" data-en="Josefina Alcaide" data-de="Josefina Alcaide">Josefina Alcaide</h3>
+                    <p class="member-title" data-en="Musician" data-de="Musikerin">Musician</p>
                 </div>
             </div>
 
@@ -781,8 +664,8 @@
                     <img src="Images/Zhangir_1.png" alt="Zhangir">
                 </div>
                 <div class="member-info">
-                    <h3 class="member-name">Zhangir Zhubanov</h3>
-                    <p class="member-title">Musician</p>
+                    <h3 class="member-name" data-en="Zhangir Zhubanov" data-de="Zhangir Zhubanov">Zhangir Zhubanov</h3>
+                    <p class="member-title" data-en="Musician" data-de="Musiker">Musician</p>
                 </div>
             </div>
         </div>
@@ -956,6 +839,7 @@
 <script src="js/calendar.js"></script>
 <script src="js/music_player.js"></script>
 <script src="js/navbar.js"></script>
+<script src="js/language_switch.js"></script>
 
 </body>
 </html>

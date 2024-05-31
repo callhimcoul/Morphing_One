@@ -1,0 +1,50 @@
+.language-switch {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.lang-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.lang-button:hover {
+    background-color: #222222;
+}
+
+@media (max-width: 768px) {
+    .language-switch {
+        top: 10px;
+        left: 10px;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .lang-button {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .language-switch {
+        top: 8px;
+        left: 8px;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .lang-button {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+}
