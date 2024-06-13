@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strauss PDF</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/Strauss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+<div class="return-btn-container-Strauss">
+    <a href="index.html" class="return-btn-Strauss">&#x2190;</a>
+</div>
+
+<div class="container">
+    <h1 class="headline">MORPHING x JOHANN STRAUSS <br> The 200th anniversary in 2025</h1>
+    <p>Hier finden Sie alle Details zum Projekt. </p>
+
+    <div class="pdf-container">
+        <div class="pdf-frame" data-pdf="pdf/Drei_Sopranos.pdf">
+            <img src="Images/Folders/Drei_Sopranos_Cover.jpg" alt="Drei Sopranos">
+            <p>Drei Sopranos</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Julia_Alfredo.pdf">
+            <img src="Images/Folders/Julia_Alfredo.png" alt="Julia Sturzlbaum">
+            <p>Julia Sturzlbaum</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Timna_Tim.pdf">
+            <img src="Images/Folders/Timna_Tim.png" alt="Timna Brauer & Tim Allhof">
+            <p>Timna Brauer & Tim Allhof</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Morphing_Niklas.pdf">
+            <img src="Images/Folders/Morphing_Niklas.png" alt="Niklas Liepe & Morphing">
+            <p>Niklas Liepe & Morphing</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Anna—Klaudia.pdf">
+            <img src="Images/Folders/Anna_Klaudia.png" alt="Anna Voshege & Klaudia Kudelko">
+            <p>Anna Voshege & Klaudia Kudelko</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Anna—Klaudia.pdf">
+            <img src="Images/Folders/Anna_Klaudia.png" alt="Anna Voshege & Shino Moroto">
+            <p>Anna Voshege & Shino Moroto</p>
+        </div>
+
+        <div class="pdf-frame" data-pdf="pdf/Osaka.pdf">
+            <img src="Images/Folders/Sakamoto.png" alt="Ryüichi Sakamoto">
+            <p>Ryüichi Sakamoto</p>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" id="pdf-overlay">
+    <div class="overlay-content">
+        <button class="close-button" onclick="closeOverlay()">&#10005;</button>
+        <button class="nav-arrow left" onclick="prevPage()">&#9664;</button>
+        <div id="pdf-canvas-container" class="pdf-canvas-container">
+            <canvas id="pdf-canvas" class="pdf-canvas"></canvas>
+        </div>
+        <button class="nav-arrow right" onclick="nextPage()">&#9654;</button>
+    </div>
+</div>
+
+<script src="js/Strauss.js"></script>
+</body>
+</html>
