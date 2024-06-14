@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -131,7 +131,7 @@ body {
 
 .overlay-content {
     background: white;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     width: 90%;
     max-width: 800px;
@@ -163,8 +163,8 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 2em;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -204,10 +204,22 @@ body {
     z-index: 20;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
+    .pdf-container {
+        flex-direction: row;
+        flex-wrap: wrap; /* Allows wrapping to new lines if necessary */
+        justify-content: center;
+    }
 
+    .pdf-frame {
+        flex: 1 0 30%; /* Adjusts the size and allows for wrapping */
+        margin: 10px; /* Adds some spacing between items */
+    }
+}
+
+@media screen and (max-width: 768px) {
     .headline {
-        font-size: 20px; /* Hier kannst du die gewünschte Schriftgröße für Mobilgeräte einstellen */
+        font-size: 20px; /* Adjust font size for mobile */
         color: #eac657;
     }
 
@@ -229,6 +241,6 @@ body {
     }
 
     .overlay-content {
-        padding: 10px;
+        padding: 4px;
     }
 }
