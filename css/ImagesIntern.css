@@ -101,9 +101,10 @@ body {
 }
 
 .custombold-text {
-    color: 	#d0b546;
-    font-size: 24px;
+    color: 	#D4AF37;
+    font-size: 26px;
     font-family: 'VerlagBookItalic', sans-serif;
+    font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,7 +125,7 @@ body {
     }
 
     .custombold-text {
-        font-size: large;
+        font-size: 24px;
     }
 }
 
@@ -175,7 +176,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #0077b6;
+    background-color: #D4AF37;
 }
 
 .dropdown:hover .dropdown-content {

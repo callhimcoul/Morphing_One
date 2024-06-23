@@ -1,17 +1,30 @@
-#videos {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
-    padding-top: 50px;
-    padding-bottom: 50px;
+.video-gallery {
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1.5%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
-.section-title-videos {
-    font-family: 'VerlagBookItalic', sans-serif;
-    color: #d0b546;
+.custombold-text-videos {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+}
+
+.row-videos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .video-thumbnail {
     position: relative;
     cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .video-thumbnail img {
@@ -39,25 +52,41 @@
     color: rgba(255, 204, 0, 1);
 }
 
-.btn-primary {
+.gallery-button-videos {
     display: inline-block;
     padding: 5px 10px;
-    margin-top: 1rem;
     font-size: 0.875rem;
     color: white;
     background: none;
-    border: 2px solid #d0b546;
+    border: 2px solid #D4AF37;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.btn-primary:hover {
+.gallery-button-videos:hover {
     background: whitesmoke;
     color: #000;
 }
 
+@media (max-width: 768px) {
+    .row-videos {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .video-gallery {
+        padding: 1rem 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 
+    .custombold-text-videos {
+        font-size: 2rem;
+    }
 
-
+    .gallery-button-videos {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+}

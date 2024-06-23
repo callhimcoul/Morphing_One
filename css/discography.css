@@ -6,12 +6,12 @@
     align-items: center;
 }
 
-
 #discography h2 {
     text-align: center;
-    color: #d4af37;
+    color: #D4AF37;
     margin-bottom: 40px;
     font-family: 'VerlagBoldItalic', sans-serif;
+    font-weight: 100;
 }
 
 .discography-entry {
@@ -85,7 +85,7 @@
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: #d0b546;
+    color: #D4AF37;
     transition: transform 0.3s ease;
     font-family: 'VerlagBookItalic', sans-serif;
 }

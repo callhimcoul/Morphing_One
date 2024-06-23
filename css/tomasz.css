@@ -1,7 +1,7 @@
 .tomasz-section {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5rem 1rem;
-    color: #d0b546;
+    color: #D4AF37;
     font-family: 'VerlagBookItalic', sans-serif;
 }
 
@@ -21,6 +21,7 @@
     font-size: 1.5rem;
     margin-top: 1rem;
     font-family: 'VerlagBoldItalic', sans-serif;
+    font-weight: 100;
 }
 
 .tomasz-biography p {
@@ -71,6 +72,6 @@
 }
 
 .read-more-btn:hover {
-    background-color: #b3953d;
+    background-color: #D4AF37;
     color: #fff;
 }

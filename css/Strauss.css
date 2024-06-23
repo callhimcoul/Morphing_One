@@ -71,8 +71,9 @@ body {
 }
 
 .headline {
-    font-family: 'VerlagBold', serif;
-    color: #eac657;
+    font-family: 'VerlagBook', serif;
+    color: #D4AF37;
+    font-weight: 100;
 }
 
 .container p, .pdf-frame p {
@@ -207,20 +208,20 @@ body {
 @media screen and (min-width: 769px) {
     .pdf-container {
         flex-direction: row;
-        flex-wrap: wrap; /* Allows wrapping to new lines if necessary */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .pdf-frame {
-        flex: 1 0 30%; /* Adjusts the size and allows for wrapping */
-        margin: 10px; /* Adds some spacing between items */
+        flex: 1 0 30%;
+        margin: 10px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .headline {
-        font-size: 20px; /* Adjust font size for mobile */
-        color: #eac657;
+        font-size: 20px;
+        color: #D4AF37;
     }
 
     .pdf-frame {
@@ -232,7 +233,7 @@ body {
     .container {
         padding: 10px;
         width: 90%;
-        margin-top: 60px; /* Move the container down */
+        margin-top: 60px;
     }
 
     .nav-arrow {

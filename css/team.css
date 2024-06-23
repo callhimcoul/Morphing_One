@@ -6,9 +6,10 @@
 
 .team-title {
     font-size: 1.8em;
-    color: #d4af37;
+    color: #D4AF37;
     margin-bottom: 40px;
     font-family: 'VerlagBookItalic', sans-serif;
+    font-weight: 100;
 }
 
 .team-container {
@@ -66,7 +67,7 @@
 }
 
 .member-name {
-    color: goldenrod;
+    color: #D4AF37;
     margin-bottom: 5px;
     font-family: "VerlagBookItalic", sans-serif;
     font-size: 1.5em;
