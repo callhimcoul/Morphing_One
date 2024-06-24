@@ -91,3 +91,39 @@
         height: auto;
     }
 }
+
+@media (max-width: 380px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px; 
+    }
+
+    .navbar-brand {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        max-width: 180px; 
+        height: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 5px 0;
+        text-align: center;
+    }
+}
