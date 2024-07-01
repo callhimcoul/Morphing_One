@@ -18,7 +18,7 @@
 }
 
 .tomasz-name {
-    font-size: 1.5rem;
+    font-size: 28px;
     margin-top: 1rem;
     font-family: 'VerlagBoldItalic', sans-serif;
     font-weight: 100;
@@ -28,7 +28,6 @@
     margin-bottom: 1rem;
     font-size: 19px;
     color: white;
-    opacity: 70%;
     font-family: 'VerlagBookItalic', sans-serif;
 }
 

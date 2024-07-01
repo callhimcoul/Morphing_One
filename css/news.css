@@ -13,6 +13,7 @@
     color: #D4AF37;
     font-family: 'VerlagBoldItalic', sans-serif;
     font-weight: 100;
+    font-size: 28px;
 }
 
 .news-box {
@@ -57,7 +58,6 @@
 
 .news-item .news-text {
     color: white;
-    opacity: 70%;
     margin-bottom: 1rem;
     font-family: 'VerlagBookItalic', sans-serif;
     font-size: 14px;
@@ -71,7 +71,7 @@
 }
 
 .news-item .news-link {
-    background: linear-gradient(135deg, #58a6ff, #1f6feb);
+    background: #D4AF37;
     border: none;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -83,9 +83,6 @@
     font-family: 'VerlagBookItalic', sans-serif;
 }
 
-.news-item .news-link:hover {
-    background: linear-gradient(135deg, #1f6feb, #58a6ff);
-}
 
 .s_price {
     color: #D4AF37;
@@ -130,9 +127,9 @@
     transform: translateX(-50%);
     background-color: ghostwhite;
     color: black;
-    padding: 2px 8px; /* Halved padding */
+    padding: 2px 8px;
     border-radius: 5px;
-    font-size: 0.8rem; /* Halved font size */
+    font-size: 0.8rem;
     font-family: 'VerlagBoldItalic', sans-serif;
 }
 
@@ -147,6 +144,9 @@
         transform: translateX(-50%);
         padding: 2px 7px;
         font-size: 0.6rem;
+    }
+    .news-section h2 {
+        font-size: 21px;
     }
 }
 

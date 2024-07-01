@@ -14,7 +14,7 @@ body {
 }
 
 .image-gallery h2 {
-    font-size: 2rem;
+    font-size: 28px;
     color: #D4AF37;
     margin-bottom: 1.5rem;
     font-weight: 100;
@@ -47,8 +47,8 @@ body {
 }
 
 .image-in-gallery.enlarged {
-    transform: scale(1.2); /* Slightly larger */
-    z-index: 10; /* Ensure it appears above other elements */
+    transform: scale(1.2);
+    z-index: 10;
 }
 
 .close-button {
@@ -100,7 +100,7 @@ body {
     }
 
     .image-gallery h2 {
-        font-size: 2rem;
+        font-size: 21px;
     }
 
     .gallery-button {

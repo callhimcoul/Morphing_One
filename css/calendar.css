@@ -10,7 +10,7 @@ section {
 }
 
 .calendar h2 {
-    font-size: 2rem;
+    font-size: 28px;
     margin-bottom: 1rem;
     color: #D4AF37;
     font-family: 'VerlagBookItalic', sans-serif;
@@ -28,7 +28,7 @@ section {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Adds space between calendar and concert list */
+    margin-bottom: 20px;
 }
 
 .month {
@@ -168,5 +168,12 @@ section {
         width: 100%;
         float: none;
         margin-top: 10px;
+    }
+    .calendar h2 {
+        font-size: 21px;
+    }
+    .concert-list h3 {
+        font-size: 21px;
+        font-weight: 100;
     }
 }

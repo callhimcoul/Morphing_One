@@ -12,6 +12,7 @@
     margin-bottom: 40px;
     font-family: 'VerlagBoldItalic', sans-serif;
     font-weight: 100;
+    font-size: 28px;
 }
 
 .discography-entry {
@@ -134,6 +135,9 @@
         width: 100%;
         margin: 10px 0;
         text-align: center;
+    }
+    #discography h2 {
+        font-size: 21px;
     }
 }
 

@@ -56,74 +56,34 @@
 }
 
 @media (max-width: 576px) {
-    .navbar-brand.mx-auto {
-        max-width: 260px;
+    .navbar-toggler {
+        width: 30px;  /* Adjust the width as needed */
+        height: 30px; /* Adjust the height as needed */
+        padding: 4px; /* Adjust the padding as needed */
+        font-size: 0.875rem; /* Adjust the font size as needed */
+        border-color: #fff;
     }
-    .navbar-logo-small {
-        max-width: 80px;
-    }
-    .navbar-logo-small-mobile {
-        display: block;
-    }
-    .navbar-brand .d-sm-none {
-        display: none;
-    }
-}
 
-@media (orientation: landscape) and (max-width: 576px) {
-    .navbar {
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-brand {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-logo-small-mobile,
-    .navbar-logo-small {
-        display: none;
-    }
-    .navbar-logo {
-        display: block;
-        max-width: 120px;
-        height: auto;
+    .navbar-toggler-icon {
+        width: 20px; /* Adjust the width of the icon as needed */
+        height: 20px; /* Adjust the height of the icon as needed */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
 
 @media (max-width: 380px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .navbar-toggler {
-        margin-top: 10px; 
+        width: 25px;  /* Further adjust for smaller screens */
+        height: 25px; /* Further adjust for smaller screens */
+        padding: 2px; /* Further adjust for smaller screens */
+        font-size: 0.75rem; /* Further adjust for smaller screens */
+        border-color: #fff;
     }
 
-    .navbar-brand {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navbar-logo {
-        max-width: 180px; 
-        height: auto;
-    }
-
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-        padding: 5px 0;
-        text-align: center;
+    .navbar-toggler-icon {
+        width: 18px; /* Further adjust the width of the icon */
+        height: 18px; /* Further adjust the height of the icon */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
+

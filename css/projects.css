@@ -12,8 +12,8 @@
     text-align: center;
     margin-bottom: 3rem;
     color: #D4AF37;
-    font-size: 2rem;
     font-weight: 100;
+    font-size: 28px;
 }
 
 .project-item {
@@ -68,7 +68,6 @@
     margin-bottom: 1rem;
     font-size: 18px;
     color: white;
-    opacity: 70%;
     font-family: 'VerlagBookItalic', sans-serif;
 }
 
@@ -196,6 +195,15 @@
         transform: translateX(-50%);
         padding: 4px 7px;
         font-size: 0.6rem;
+    }
+    .projects-section h2 {
+        font-size: 21px;
+    }
+    .project-content h5 {
+        font-size: 21px;
+    }
+    .project-content p {
+        font-size: 16px;
     }
 }
 
